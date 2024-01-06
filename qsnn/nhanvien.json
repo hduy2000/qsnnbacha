@@ -1,0 +1,2348 @@
+[
+  {
+    "STT": 1,
+    "MaSoNV": "18097",
+    "HoTen": "Đỗ Duy Lân",
+    "KhoaPhong": "Ban lãnh đạo"
+  },
+  {
+    "STT": 2,
+    "MaSoNV": "17118",
+    "HoTen": "Nguyễn Hằng Nga",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 3,
+    "MaSoNV": "20681",
+    "HoTen": "Lê Thúy Hiền",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 4,
+    "MaSoNV": "19227",
+    "HoTen": "Bùi Thị Thanh Quý",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 5,
+    "MaSoNV": "21087",
+    "HoTen": "Dương Huyền Thanh",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 6,
+    "MaSoNV": "21191",
+    "HoTen": "Quách Thị Xuân Đào",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 7,
+    "MaSoNV": "22030",
+    "HoTen": "Bùi Thị Thu Hà",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 8,
+    "MaSoNV": "22124",
+    "HoTen": "Phạm Linh Nhi",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 9,
+    "MaSoNV": "23043",
+    "HoTen": "Trương Thùy Nhung",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 10,
+    "MaSoNV": "23046",
+    "HoTen": "Đào Hải Yến",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 11,
+    "MaSoNV": "21140",
+    "HoTen": "Nguyễn Thị Phương",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 12,
+    "MaSoNV": "20590",
+    "HoTen": "Nguyễn Thị Thảo",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 13,
+    "MaSoNV": "22228",
+    "HoTen": "Bùi Thị Bích Phương",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 14,
+    "MaSoNV": "23272",
+    "HoTen": "Đinh Thị Thu",
+    "KhoaPhong": "BP. CSKH"
+  },
+  {
+    "STT": 15,
+    "MaSoNV": "19300",
+    "HoTen": "Nguyễn Quốc Sơn",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 16,
+    "MaSoNV": "20609",
+    "HoTen": "Nguyễn Minh Hà",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 17,
+    "MaSoNV": "22006",
+    "HoTen": "Nguyễn Phúc Thành",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 18,
+    "MaSoNV": "23075",
+    "HoTen": "Ngô Sỹ Quý",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 19,
+    "MaSoNV": "23076",
+    "HoTen": "Hoàng Văn Tuấn",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 20,
+    "MaSoNV": "23077",
+    "HoTen": "Dương Văn Nam",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 21,
+    "MaSoNV": "23079",
+    "HoTen": "Vũ Quang Tiến",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 22,
+    "MaSoNV": "23080",
+    "HoTen": "Nguyễn Văn Thắng",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 23,
+    "MaSoNV": "23081",
+    "HoTen": "Cao Thị Ánh Tuyết",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 24,
+    "MaSoNV": "23082",
+    "HoTen": "Trần Đức Minh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 25,
+    "MaSoNV": "19312",
+    "HoTen": "Trần Hoài Nam",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 26,
+    "MaSoNV": "22164",
+    "HoTen": "Tống Đức Phúc",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 27,
+    "MaSoNV": "23213",
+    "HoTen": "Bùi Tuấn Anh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 28,
+    "MaSoNV": "19303",
+    "HoTen": "Dương Quang Chiến",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 29,
+    "MaSoNV": "19313",
+    "HoTen": "Nguyễn Văn Hoàng",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 30,
+    "MaSoNV": "17010",
+    "HoTen": "Lê Túy Hoa",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 31,
+    "MaSoNV": "19282",
+    "HoTen": "Phạm Thị Anh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 32,
+    "MaSoNV": "20688",
+    "HoTen": "Vũ Thị Phương Thảo",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 33,
+    "MaSoNV": "19145",
+    "HoTen": "Đỗ Thu Huệ",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 34,
+    "MaSoNV": "21148",
+    "HoTen": "Bùi Thị Nga",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 35,
+    "MaSoNV": "20692",
+    "HoTen": "Dương Thị Loan",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 36,
+    "MaSoNV": "20738",
+    "HoTen": "Phùng Thùy Linh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 37,
+    "MaSoNV": "19473",
+    "HoTen": "Nghiêm Thị Hiền",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 38,
+    "MaSoNV": "23118",
+    "HoTen": "Dương Thu Huyền",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 39,
+    "MaSoNV": "23151",
+    "HoTen": "Hoàng Thị Thúy",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 40,
+    "MaSoNV": "16051",
+    "HoTen": "Nguyễn Thị Phương",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 41,
+    "MaSoNV": "21067",
+    "HoTen": "Bùi Thị Hằng",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 42,
+    "MaSoNV": "23116",
+    "HoTen": "Nguyễn Thị Yến Chi",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 43,
+    "MaSoNV": "23123",
+    "HoTen": "Nguyễn Thị Nhung",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 44,
+    "MaSoNV": "22159",
+    "HoTen": "Dương Thị Mỹ Linh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 45,
+    "MaSoNV": "16075",
+    "HoTen": "Phạm Văn Hoàng",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 46,
+    "MaSoNV": "22022",
+    "HoTen": "Trần Thị Phương Thanh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 47,
+    "MaSoNV": "23150",
+    "HoTen": "Phạm Thị Hoa",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 48,
+    "MaSoNV": "22143",
+    "HoTen": "Nguyễn Thị Hương Giang",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 49,
+    "MaSoNV": "20610",
+    "HoTen": "Chu Mai Ngọc Anh",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 50,
+    "MaSoNV": "22163",
+    "HoTen": "Nghiêm Duy Hoàng",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 51,
+    "MaSoNV": "17063",
+    "HoTen": "Nguyễn Thị Kiều Giao",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 52,
+    "MaSoNV": "21177",
+    "HoTen": "Bùi Thanh Tú",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 53,
+    "MaSoNV": "17195",
+    "HoTen": "Phạm Thị Hằng Nga",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 54,
+    "MaSoNV": "23220",
+    "HoTen": "Nguyễn Văn Khái",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 55,
+    "MaSoNV": "23236",
+    "HoTen": "Trần Thị Khánh Huyền",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 56,
+    "MaSoNV": "23145",
+    "HoTen": "Dương Văn Phương",
+    "KhoaPhong": "BP. GMHS"
+  },
+  {
+    "STT": 57,
+    "MaSoNV": "18099",
+    "HoTen": "Nguyễn Tiến Bộ",
+    "KhoaPhong": "BP. Kỹ Thuật & TBYT"
+  },
+  {
+    "STT": 58,
+    "MaSoNV": "18100",
+    "HoTen": "Vương Xuân Hải",
+    "KhoaPhong": "BP. Kỹ Thuật & TBYT"
+  },
+  {
+    "STT": 59,
+    "MaSoNV": "20345",
+    "HoTen": "Võ Trường Sơn",
+    "KhoaPhong": "BP. Kỹ Thuật & TBYT"
+  },
+  {
+    "STT": 60,
+    "MaSoNV": "23086",
+    "HoTen": "Vũ Thái Hùng",
+    "KhoaPhong": "BP. Kỹ Thuật & TBYT"
+  },
+  {
+    "STT": 61,
+    "MaSoNV": "17181",
+    "HoTen": "Nguyễn Thị Nhung",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 62,
+    "MaSoNV": "20766",
+    "HoTen": "Hoàng Thị Thùy Linh",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 63,
+    "MaSoNV": "19463",
+    "HoTen": "Ngô Hồng Nhung",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 64,
+    "MaSoNV": "21178",
+    "HoTen": "Hà Thị Thanh Mai",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 65,
+    "MaSoNV": "22038",
+    "HoTen": "Đinh Thị Thu Thủy",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 66,
+    "MaSoNV": "22087",
+    "HoTen": "Nguyễn Thị Thanh Nhàn",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 67,
+    "MaSoNV": "22141",
+    "HoTen": "Phan Huyền Trang",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 68,
+    "MaSoNV": "22157",
+    "HoTen": "Hoàng Thị Thanh Hằng",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 69,
+    "MaSoNV": "20761",
+    "HoTen": "Nguyễn Thị Thu Hồng",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 70,
+    "MaSoNV": "22167",
+    "HoTen": "Nguyễn Thị Hồng Yến",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 71,
+    "MaSoNV": "19230",
+    "HoTen": "Mai Kim Liên",
+    "KhoaPhong": "BP. Thu ngân"
+  },
+  {
+    "STT": 72,
+    "MaSoNV": "18045",
+    "HoTen": "Chử Thị Anh Thơ",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 73,
+    "MaSoNV": "21129",
+    "HoTen": "Vũ Văn Tuấn",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 74,
+    "MaSoNV": "21200",
+    "HoTen": "Nguyễn Viết Út",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 75,
+    "MaSoNV": "22019",
+    "HoTen": "Nguyễn Văn Tam",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 76,
+    "MaSoNV": "22028",
+    "HoTen": "Đậu Sơn Hà",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 77,
+    "MaSoNV": "17077",
+    "HoTen": "Nguyễn Thị  Phương",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 78,
+    "MaSoNV": "17054",
+    "HoTen": "Nguyễn Thị Linh",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 79,
+    "MaSoNV": "19395",
+    "HoTen": "Bùi Khánh Ly",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 80,
+    "MaSoNV": "21054",
+    "HoTen": "Ngô Thị Hồng Ngát",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 81,
+    "MaSoNV": "21198",
+    "HoTen": "Trần Thị Hoài Thanh",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 82,
+    "MaSoNV": "16226",
+    "HoTen": "Trần Thị Phương",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 83,
+    "MaSoNV": "21124",
+    "HoTen": "Trần Văn Tiến",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 84,
+    "MaSoNV": "18161",
+    "HoTen": "Ngô Đức Anh",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 85,
+    "MaSoNV": "17194",
+    "HoTen": "Phạm Thanh Tùng",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 86,
+    "MaSoNV": "19409",
+    "HoTen": "Lê Xuân Khôi",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 87,
+    "MaSoNV": "19136",
+    "HoTen": "Đặng Văn Nhuận",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 88,
+    "MaSoNV": "20838",
+    "HoTen": "Phạm Tú Thành",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 89,
+    "MaSoNV": "21130",
+    "HoTen": "Nguyễn Phúc Hoàn",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 90,
+    "MaSoNV": "21254",
+    "HoTen": "Nguyễn Thị Thu Trang",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 91,
+    "MaSoNV": "23225",
+    "HoTen": "Nguyễn Thị Bình",
+    "KhoaPhong": "K. CĐHA-TDCN"
+  },
+  {
+    "STT": 92,
+    "MaSoNV": "19329",
+    "HoTen": "Lại Thị Ánh Quỳnh",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 93,
+    "MaSoNV": "20751",
+    "HoTen": "Nguyễn Thị Thanh Hương",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 94,
+    "MaSoNV": "20754",
+    "HoTen": "Nguyễn Thu Huyền",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 95,
+    "MaSoNV": "21223",
+    "HoTen": "Nguyễn Thị Trà",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 96,
+    "MaSoNV": "17083",
+    "HoTen": "Nguyễn Thị Thùy Dương",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 97,
+    "MaSoNV": "21103",
+    "HoTen": "Ngô Thị Thu Hà",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 98,
+    "MaSoNV": "22101",
+    "HoTen": "Nguyễn Thị Phương",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 99,
+    "MaSoNV": "22121",
+    "HoTen": "Ngô Ngọc Chinh",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 100,
+    "MaSoNV": "23040",
+    "HoTen": "Trần Thị Thanh Huyền",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 101,
+    "MaSoNV": "17082",
+    "HoTen": "Phạm Ngọc Vũ",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 102,
+    "MaSoNV": "23162",
+    "HoTen": "Nghiêm Kiều Trang",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 103,
+    "MaSoNV": "23163",
+    "HoTen": "Lê Thị Tuyết Anh",
+    "KhoaPhong": "K. Dược"
+  },
+  {
+    "STT": 104,
+    "MaSoNV": "21042",
+    "HoTen": "Nguyễn Thắng Lợi",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 105,
+    "MaSoNV": "19287",
+    "HoTen": "Lê Công Tiến",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 106,
+    "MaSoNV": "23096",
+    "HoTen": "Nguyễn Văn Tín",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 107,
+    "MaSoNV": "16024",
+    "HoTen": "Nguyễn Thị Hoài Sâm",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 108,
+    "MaSoNV": "22005",
+    "HoTen": "Nguyễn Thị Phương Thảo",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 109,
+    "MaSoNV": "20615",
+    "HoTen": "Trần Thị Liên",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 110,
+    "MaSoNV": "22324",
+    "HoTen": "Nguyễn Thị Kim Dung",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 111,
+    "MaSoNV": "16029",
+    "HoTen": "Nguyễn Thị Liên",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 112,
+    "MaSoNV": "18038",
+    "HoTen": "Lê Phương Thảo",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 113,
+    "MaSoNV": "17026",
+    "HoTen": "Bùi Thị Hải Yến",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 114,
+    "MaSoNV": "17035",
+    "HoTen": "Nguyễn Thị Thu Thủy",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 115,
+    "MaSoNV": "16028",
+    "HoTen": "Nguyễn Thu Hương",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 116,
+    "MaSoNV": "20640",
+    "HoTen": "Hà Duy Nghĩa",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 117,
+    "MaSoNV": "20737",
+    "HoTen": "Phan Thị Thủy",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 118,
+    "MaSoNV": "17074",
+    "HoTen": "Phạm Quốc Anh",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 119,
+    "MaSoNV": "21144",
+    "HoTen": "Đàm Thu Thảo",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 120,
+    "MaSoNV": "20612",
+    "HoTen": "Dương Thị Mai",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 121,
+    "MaSoNV": "22020",
+    "HoTen": "Trần Thị Thu Uyên",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 122,
+    "MaSoNV": "22083",
+    "HoTen": "Nguyễn Văn Tới",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 123,
+    "MaSoNV": "22082",
+    "HoTen": "Vũ Thị Chúc",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 124,
+    "MaSoNV": "22162",
+    "HoTen": "Phùng Thu Trang",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 125,
+    "MaSoNV": "23039",
+    "HoTen": "Dương Thế Triển",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 126,
+    "MaSoNV": "23106",
+    "HoTen": "Lê Thúy An",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 127,
+    "MaSoNV": "23127",
+    "HoTen": "Hoàng Thị Vân",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 128,
+    "MaSoNV": "17059",
+    "HoTen": "Nguyễn Thị Nhung",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 129,
+    "MaSoNV": "20861",
+    "HoTen": "Nguyễn Thị Huyền",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 130,
+    "MaSoNV": "23029",
+    "HoTen": "Phạm Thị Thanh Hảo",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 131,
+    "MaSoNV": "22196",
+    "HoTen": "Vũ Thị Thu Trang",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 132,
+    "MaSoNV": "19433",
+    "HoTen": "Trần Ngọc Diệp",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 133,
+    "MaSoNV": "22371",
+    "HoTen": "Phạm Hữu Tuyên",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 134,
+    "MaSoNV": "19294",
+    "HoTen": "Lê Thị Phương Huệ",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 135,
+    "MaSoNV": "22203",
+    "HoTen": "Đoàn Hoài Linh",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 136,
+    "MaSoNV": "20514",
+    "HoTen": "Nguyễn Tiệp Việt Hoa",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 137,
+    "MaSoNV": "19381",
+    "HoTen": "Nguyễn Thị Tuyết",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 138,
+    "MaSoNV": "20501",
+    "HoTen": "Nguyễn Thị Kim Cúc",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 139,
+    "MaSoNV": "19296",
+    "HoTen": "Đoàn Thị Anh Đào",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 140,
+    "MaSoNV": "19295",
+    "HoTen": "Nguyễn Thị Ngọc Lan",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 141,
+    "MaSoNV": "22187",
+    "HoTen": "Hoàng Anh Tài",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 142,
+    "MaSoNV": "19237",
+    "HoTen": "Phạm Thị Trà Giang",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 143,
+    "MaSoNV": "22185",
+    "HoTen": "Vũ Thị Tuyết Ngân",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 144,
+    "MaSoNV": "23164",
+    "HoTen": "Triệu Thị Hồng Thắm",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 145,
+    "MaSoNV": "23165",
+    "HoTen": "Trần Thị Đức Hạnh",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 146,
+    "MaSoNV": "23205",
+    "HoTen": "Lục Lưu Thủy",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 147,
+    "MaSoNV": "23212",
+    "HoTen": "Đỗ Thị Ngọc",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 148,
+    "MaSoNV": "23218",
+    "HoTen": "Vũ Ngọc Hiền",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 149,
+    "MaSoNV": "23210",
+    "HoTen": "Đoàn Thị Trúc",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 150,
+    "MaSoNV": "23227",
+    "HoTen": "Nguyễn Hằng Lan",
+    "KhoaPhong": "K. Khám bệnh"
+  },
+  {
+    "STT": 151,
+    "MaSoNV": "23152",
+    "HoTen": "Dương Hồng Nhung",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 152,
+    "MaSoNV": "22190",
+    "HoTen": "Nguyễn Văn Sáng",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 153,
+    "MaSoNV": "22184",
+    "HoTen": "Cao Sỹ Phước",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 154,
+    "MaSoNV": "22201",
+    "HoTen": "Nguyễn Đình Công",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 155,
+    "MaSoNV": "22177",
+    "HoTen": "Bùi Thị Kim Thanh",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 156,
+    "MaSoNV": "22189",
+    "HoTen": "Đinh Văn Hoàng",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 157,
+    "MaSoNV": "22188",
+    "HoTen": "Nguyễn Hoàng Giang",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 158,
+    "MaSoNV": "19404",
+    "HoTen": "Trương Vinh Long",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 159,
+    "MaSoNV": "19238",
+    "HoTen": "Nguyễn Ngọc Quân",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 160,
+    "MaSoNV": "19239",
+    "HoTen": "Lê Hương Thảo",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 161,
+    "MaSoNV": "22031",
+    "HoTen": "Vũ Văn Biên",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 162,
+    "MaSoNV": "20789",
+    "HoTen": "Nguyễn Thị Hằng",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 163,
+    "MaSoNV": "16067",
+    "HoTen": "Trần Thị Huyền",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 164,
+    "MaSoNV": "17039",
+    "HoTen": "Nguyễn Thị Minh Tuyết",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 165,
+    "MaSoNV": "16225",
+    "HoTen": "Hoàng Thị Hồng Hạnh",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 166,
+    "MaSoNV": "21064",
+    "HoTen": "Nguyễn Thị Nhuận",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 167,
+    "MaSoNV": "21274",
+    "HoTen": "Trần Thị Ngà",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 168,
+    "MaSoNV": "22216",
+    "HoTen": "Hoàng Thị Mỹ Hoa",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 169,
+    "MaSoNV": "22215",
+    "HoTen": "Hoàng Thị Thanh",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 170,
+    "MaSoNV": "22214",
+    "HoTen": "Nguyễn Thị Trang",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 171,
+    "MaSoNV": "22286",
+    "HoTen": "Lê Thu Trang",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 172,
+    "MaSoNV": "22287",
+    "HoTen": "Trần Thị Thu Hiền",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 173,
+    "MaSoNV": "22288",
+    "HoTen": "Nguyễn Thị Thu Hà",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 174,
+    "MaSoNV": "22222",
+    "HoTen": "Lê Thị Ánh Tuyết",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 175,
+    "MaSoNV": "23217",
+    "HoTen": "Lê Thu Hiền",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 176,
+    "MaSoNV": "23216",
+    "HoTen": "Nguyễn Thị Minh Phương",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 177,
+    "MaSoNV": "23214",
+    "HoTen": "Nguyễn Thị Thùy",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 178,
+    "MaSoNV": "23215",
+    "HoTen": "Phùng Hải Đăng",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 179,
+    "MaSoNV": "19402",
+    "HoTen": "Võ Thị Tâm",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 180,
+    "MaSoNV": "23233",
+    "HoTen": "Hoàng Hồng Phượng",
+    "KhoaPhong": "K. Nội"
+  },
+  {
+    "STT": 181,
+    "MaSoNV": "20685",
+    "HoTen": "Tạ Duy Dũng",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 182,
+    "MaSoNV": "21192",
+    "HoTen": "Nguyễn Đức Âu",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 183,
+    "MaSoNV": "22194",
+    "HoTen": "Hoàng Văn Chúc",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 184,
+    "MaSoNV": "20533",
+    "HoTen": "Lương Ngọc Cương",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 185,
+    "MaSoNV": "22338",
+    "HoTen": "Nguyễn Văn Qúy",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 186,
+    "MaSoNV": "18191",
+    "HoTen": "Nguyễn Văn Phương",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 187,
+    "MaSoNV": "20745",
+    "HoTen": "Tống Thị Hiền",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 188,
+    "MaSoNV": "19162",
+    "HoTen": "Ngô Kim Dung",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 189,
+    "MaSoNV": "21183",
+    "HoTen": "Nguyễn Văn Tuyến",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 190,
+    "MaSoNV": "21216",
+    "HoTen": "Nguyễn Thị Thanh Thủy",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 191,
+    "MaSoNV": "22051",
+    "HoTen": "Nguyễn Thu Trang",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 192,
+    "MaSoNV": "22208",
+    "HoTen": "Lại Hoàng Anh Thương",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 193,
+    "MaSoNV": "22024",
+    "HoTen": "Nguyễn Thanh Nga",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 194,
+    "MaSoNV": "22179",
+    "HoTen": "Nguyễn Thị Huyền",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 195,
+    "MaSoNV": "23111",
+    "HoTen": "Dương Thùy Nhung",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 196,
+    "MaSoNV": "23083",
+    "HoTen": "Nguyễn Thị Kiều Anh",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 197,
+    "MaSoNV": "16073",
+    "HoTen": "Nguyễn Thị Thu Hà",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 198,
+    "MaSoNV": "23173",
+    "HoTen": "Lại Đức Dũng",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 199,
+    "MaSoNV": "23167",
+    "HoTen": "Nguyễn Thị Hoàng Kim",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 200,
+    "MaSoNV": "16075",
+    "HoTen": "Phạm Văn Hoàng",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 201,
+    "MaSoNV": "23208",
+    "HoTen": "Hoàng Ngọc Minh",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 202,
+    "MaSoNV": "22299",
+    "HoTen": "Nguyễn Thị Thu",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 203,
+    "MaSoNV": "23211",
+    "HoTen": "Bùi Phúc Hậu",
+    "KhoaPhong": "K. Ngoại"
+  },
+  {
+    "STT": 204,
+    "MaSoNV": "21029",
+    "HoTen": "Trần Thị Hoa",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 205,
+    "MaSoNV": "21039",
+    "HoTen": "Nguyễn Thị Vân Anh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 206,
+    "MaSoNV": "20804",
+    "HoTen": "Trần Thị Liên",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 207,
+    "MaSoNV": "21020",
+    "HoTen": "Nguyễn Văn Khởi",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 208,
+    "MaSoNV": "22271",
+    "HoTen": "Kiều Văn Long",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 209,
+    "MaSoNV": "23054",
+    "HoTen": "Phan Thị Duyên",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 210,
+    "MaSoNV": "23057",
+    "HoTen": "Trương Thạch Cương",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 211,
+    "MaSoNV": "17034",
+    "HoTen": "Phạm Thị Thương Huyền",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 212,
+    "MaSoNV": "17032",
+    "HoTen": "Nguyễn Thị Phương Anh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 213,
+    "MaSoNV": "20697",
+    "HoTen": "Hoàng Thanh Nhàn",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 214,
+    "MaSoNV": "20732",
+    "HoTen": "Trần Thị Nhài",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 215,
+    "MaSoNV": "20735",
+    "HoTen": "Bùi Thị Thảo",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 216,
+    "MaSoNV": "20736",
+    "HoTen": "Lương Thị Nguyên Sao",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 217,
+    "MaSoNV": "20707",
+    "HoTen": "Trần Khánh Huyền",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 218,
+    "MaSoNV": "19471",
+    "HoTen": "Nguyễn Bích Hạnh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 219,
+    "MaSoNV": "21050",
+    "HoTen": "Nguyễn Thị Thu An",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 220,
+    "MaSoNV": "21106",
+    "HoTen": "Ngô Hồng Hoa",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 221,
+    "MaSoNV": "21135",
+    "HoTen": "Phạm Thị Như Tiên",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 222,
+    "MaSoNV": "21164",
+    "HoTen": "Chu Thị Ánh Đào",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 223,
+    "MaSoNV": "21261",
+    "HoTen": "Nguyễn Kiều Trang",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 224,
+    "MaSoNV": "22095",
+    "HoTen": "Trần Thị Thu Uyên",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 225,
+    "MaSoNV": "22107",
+    "HoTen": "Phạm Thị Phương Thảo",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 226,
+    "MaSoNV": "22316",
+    "HoTen": "Nguyễn Thị Ngọc",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 227,
+    "MaSoNV": "20668",
+    "HoTen": "Ngô Thị Phương",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 228,
+    "MaSoNV": "22315",
+    "HoTen": "Nguyễn Hải Hà",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 229,
+    "MaSoNV": "22065",
+    "HoTen": "Lê Thị Khánh Linh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 230,
+    "MaSoNV": "22310",
+    "HoTen": "Hoàng Phương Mai",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 231,
+    "MaSoNV": "22311",
+    "HoTen": "Phạm Thu Hà",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 232,
+    "MaSoNV": "23041",
+    "HoTen": "Trương Thị Như Quỳnh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 233,
+    "MaSoNV": "18060",
+    "HoTen": "Vũ Thị Thu Huyền",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 234,
+    "MaSoNV": "21237",
+    "HoTen": "Âu Thị Thu Hằng",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 235,
+    "MaSoNV": "19258",
+    "HoTen": "Phạm Thị Huyền Trang",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 236,
+    "MaSoNV": "19259",
+    "HoTen": "Nguyễn Thị Huyền",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 237,
+    "MaSoNV": "22181",
+    "HoTen": "Nguyễn Thị Hương",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 238,
+    "MaSoNV": "22183",
+    "HoTen": "Nguyễn Ngọc Trai",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 239,
+    "MaSoNV": "22209",
+    "HoTen": "Nguyễn Thị Hồng Loan",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 240,
+    "MaSoNV": "22267",
+    "HoTen": "Trần Thị Thanh Tâm",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 241,
+    "MaSoNV": "22293",
+    "HoTen": "Ngô Thị Phương Hiền",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 242,
+    "MaSoNV": "22292",
+    "HoTen": "Trần Văn Thọ",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 243,
+    "MaSoNV": "22182",
+    "HoTen": "Trần Thị  Mỹ Hạnh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 244,
+    "MaSoNV": "22120",
+    "HoTen": "Nguyễn Thị Việt Hà",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 245,
+    "MaSoNV": 23262,
+    "HoTen": "Trần Duy Vũ",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 246,
+    "MaSoNV": "22226",
+    "HoTen": "Nguyễn Hồ Dịu",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 247,
+    "MaSoNV": "21024",
+    "HoTen": "Nghiêm Thị Thuyết",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 248,
+    "MaSoNV": "21172",
+    "HoTen": "Nguyễn Thanh Hường",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 249,
+    "MaSoNV": "23117",
+    "HoTen": "Trần Thị Út",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 250,
+    "MaSoNV": "16079",
+    "HoTen": "Nguyễn Thị Nga",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 251,
+    "MaSoNV": "20733",
+    "HoTen": "Vũ Ngọc Ánh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 252,
+    "MaSoNV": "23202",
+    "HoTen": "Nông Thanh Tuyến",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 253,
+    "MaSoNV": "23034",
+    "HoTen": "Ngô Văn Trường",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 254,
+    "MaSoNV": "23153",
+    "HoTen": "Nguyễn Khánh Ngọc",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 255,
+    "MaSoNV": "23174",
+    "HoTen": "Nguyễn Trường Anh",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 256,
+    "MaSoNV": "23261",
+    "HoTen": "Đào Vĩnh Phúc",
+    "KhoaPhong": "K. Nhi"
+  },
+  {
+    "STT": 257,
+    "MaSoNV": "21122",
+    "HoTen": "Nguyễn Duy Huân",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 258,
+    "MaSoNV": "22330",
+    "HoTen": "Nguyễn Quốc Anh",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 259,
+    "MaSoNV": "22331",
+    "HoTen": "Nguyễn Cẩm Tú",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 260,
+    "MaSoNV": "22334",
+    "HoTen": "Nguyễn Thị Thu Hằng",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 261,
+    "MaSoNV": "22335",
+    "HoTen": "Đàm Thị Thùy Linh",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 262,
+    "MaSoNV": "22336",
+    "HoTen": "Trần Thị Son",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 263,
+    "MaSoNV": "22337",
+    "HoTen": "Đỗ Phương Hoa",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 264,
+    "MaSoNV": "23229",
+    "HoTen": "Doãn Thái Sơn",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 265,
+    "MaSoNV": "23230",
+    "HoTen": "Phạm Minh Châu",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 266,
+    "MaSoNV": "23231",
+    "HoTen": "Nguyễn Thị Hồng Hiển",
+    "KhoaPhong": "K. Phẫu thuật thẩm mỹ"
+  },
+  {
+    "STT": 267,
+    "MaSoNV": "20556",
+    "HoTen": "Lưu Quốc Khải",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 268,
+    "MaSoNV": "17080",
+    "HoTen": "Bùi Thị Hải Yến",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 269,
+    "MaSoNV": "19483",
+    "HoTen": "Phạm Thị Thùy Trang",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 270,
+    "MaSoNV": "19283",
+    "HoTen": "Dương Thị Thu Hiền",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 271,
+    "MaSoNV": "20785",
+    "HoTen": "Phạm Thị Phương Thảo",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 272,
+    "MaSoNV": "21030",
+    "HoTen": "Lê Ngọc Huyền",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 273,
+    "MaSoNV": "20673",
+    "HoTen": "Lê Thị Bảy",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 274,
+    "MaSoNV": "20739",
+    "HoTen": "Đỗ Thanh Phương",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 275,
+    "MaSoNV": "21028",
+    "HoTen": "Đặng Thị Hải Thùy",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 276,
+    "MaSoNV": "21211",
+    "HoTen": "Nguyễn Phương Thúy",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 277,
+    "MaSoNV": "22047",
+    "HoTen": "Bùi Thị Thu Hà",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 278,
+    "MaSoNV": "20750",
+    "HoTen": "Tạ Thị Thu Phượng",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 279,
+    "MaSoNV": "23053",
+    "HoTen": "Trịnh Thị Thơ ",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 280,
+    "MaSoNV": "22281",
+    "HoTen": "Lê Diệu Linh",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 281,
+    "MaSoNV": "22171",
+    "HoTen": "Nguyễn Thị Tú Linh",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 282,
+    "MaSoNV": "23159",
+    "HoTen": "Trần Thị Khánh Ly",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 283,
+    "MaSoNV": "23169",
+    "HoTen": "Lê Thanh Thảo",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 284,
+    "MaSoNV": "23166",
+    "HoTen": "Lê Thị Ngọc",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 285,
+    "MaSoNV": "23235",
+    "HoTen": "Nguyễn Hải Linh",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 286,
+    "MaSoNV": "19297",
+    "HoTen": "Phạm Thị Thu Hương",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 287,
+    "MaSoNV": "23232",
+    "HoTen": "Dương Hoàng Long",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 288,
+    "MaSoNV": "20568",
+    "HoTen": "Kiều Tiến Quyết",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 289,
+    "MaSoNV": "23226",
+    "HoTen": "Phạm Thị Thanh Xuân",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 290,
+    "MaSoNV": "23273",
+    "HoTen": "Nguyễn Tuấn Anh",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 291,
+    "MaSoNV": "21021",
+    "HoTen": "Lê Sỹ Dũng",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 292,
+    "MaSoNV": "21275",
+    "HoTen": "Hoàng Tiến Dũng",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 293,
+    "MaSoNV": "22002",
+    "HoTen": "Bùi Minh Phúc",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 294,
+    "MaSoNV": "22314",
+    "HoTen": "Lê Thị Hằng",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 295,
+    "MaSoNV": "20786",
+    "HoTen": "Bùi Thị Thùy Dung",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 296,
+    "MaSoNV": "21262",
+    "HoTen": "Nguyễn Thị Hương Giang",
+    "KhoaPhong": "K. Phụ sản"
+  },
+  {
+    "STT": 297,
+    "MaSoNV": "23016",
+    "HoTen": "Nguyễn Thị Hoàng Yến",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 298,
+    "MaSoNV": "20762",
+    "HoTen": "Đồng Thị Kim Oanh",
+    "KhoaPhong": "K. Phụ Sản"
+  },
+  {
+    "STT": 299,
+    "MaSoNV": "16003",
+    "HoTen": "Nguyễn Thị Huê",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 300,
+    "MaSoNV": "16020",
+    "HoTen": "Nguyễn Thị Minh Phương",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 301,
+    "MaSoNV": "16043",
+    "HoTen": "Nguyễn Thị Kim Thảo",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 302,
+    "MaSoNV": "17044",
+    "HoTen": "Nguyễn Thị Thoa",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 303,
+    "MaSoNV": "18042",
+    "HoTen": "Phùng Thị Lan Trinh",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 304,
+    "MaSoNV": "18133",
+    "HoTen": "Đào Kim Thoa",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 305,
+    "MaSoNV": "20519",
+    "HoTen": "Nguyễn Việt Anh",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 306,
+    "MaSoNV": "20527",
+    "HoTen": "Nguyễn Văn Thành",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 307,
+    "MaSoNV": "20741",
+    "HoTen": "Lê Thị Mai",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 308,
+    "MaSoNV": "20802",
+    "HoTen": "Đinh Thị Anh",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 309,
+    "MaSoNV": "21117",
+    "HoTen": "Hoàng Văn Vương",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 310,
+    "MaSoNV": "21224",
+    "HoTen": "Phạm Thu Hằng",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 311,
+    "MaSoNV": "22160",
+    "HoTen": "Đào Thu Hà",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 312,
+    "MaSoNV": "22220",
+    "HoTen": "Nguyễn Thị Thanh Huyền",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 313,
+    "MaSoNV": "22272",
+    "HoTen": "Nguyễn Thị Thanh Thư",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 314,
+    "MaSoNV": "23066",
+    "HoTen": "Đỗ Ngọc Việt",
+    "KhoaPhong": "K. Xét nghiệm"
+  },
+  {
+    "STT": 315,
+    "MaSoNV": "18106",
+    "HoTen": "Nguyễn Việt Hưng",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 316,
+    "MaSoNV": "20013",
+    "HoTen": "Phan Trọng Tiến",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 317,
+    "MaSoNV": "23014",
+    "HoTen": "Nguyễn Anh Vũ",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 318,
+    "MaSoNV": "23013",
+    "HoTen": "Bùi Hoàng Sơn",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 319,
+    "MaSoNV": "23015",
+    "HoTen": "Vũ Văn Huy",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 320,
+    "MaSoNV": "23005",
+    "HoTen": "Hoàng Thị Hồng Nhung",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 321,
+    "MaSoNV": "23007",
+    "HoTen": "Hoàng Văn Duy",
+    "KhoaPhong": "P. CNTT"
+  },
+  {
+    "STT": 322,
+    "MaSoNV": "21034",
+    "HoTen": "Phạm Thị Ngọc Dung",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 323,
+    "MaSoNV": "19452",
+    "HoTen": "Đỗ Quang Duy",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 324,
+    "MaSoNV": "20784",
+    "HoTen": "Đỗ Thị Thu Thủy",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 325,
+    "MaSoNV": "21056",
+    "HoTen": "Nguyễn Thị Sen",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 326,
+    "MaSoNV": "16062",
+    "HoTen": "Dương Thị Nguyệt",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 327,
+    "MaSoNV": "21121",
+    "HoTen": "Nguyễn Thị Bình Yên",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 328,
+    "MaSoNV": "21197",
+    "HoTen": "Võ Thị Châu Quỳnh",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 329,
+    "MaSoNV": "20702",
+    "HoTen": "Đặng Thị Nghĩa",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 330,
+    "MaSoNV": "22125",
+    "HoTen": "Nguyễn Thị Thủy",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 331,
+    "MaSoNV": "18064",
+    "HoTen": "Nguyễn Thị Luyến",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 332,
+    "MaSoNV": "23144",
+    "HoTen": "Lưu Xuân Túc",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 333,
+    "MaSoNV": "23070",
+    "HoTen": "Nguyễn Hồng Ninh",
+    "KhoaPhong": "P. ĐD - KSNK"
+  },
+  {
+    "STT": 334,
+    "MaSoNV": "14012",
+    "HoTen": "Bùi Hạnh Nguyên",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 335,
+    "MaSoNV": "18085",
+    "HoTen": "Ngô Thị Hòa",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 336,
+    "MaSoNV": "19389",
+    "HoTen": "Nguyễn Thị Thu Thủy",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 337,
+    "MaSoNV": "14086",
+    "HoTen": "Phạm Thị Vân",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 338,
+    "MaSoNV": "19247",
+    "HoTen": "Nguyễn Thị Mai Lan",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 339,
+    "MaSoNV": "20815",
+    "HoTen": "Nguyễn Thị Thanh Hà",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 340,
+    "MaSoNV": "20774",
+    "HoTen": "Nguyễn Thị Thùy Linh",
+    "KhoaPhong": "P. Kế toán"
+  },
+  {
+    "STT": 341,
+    "MaSoNV": "21076",
+    "HoTen": "Nguyễn Thị Thành",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 342,
+    "MaSoNV": "22129",
+    "HoTen": "Lê Thị Minh Ngọc",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 343,
+    "MaSoNV": "21085",
+    "HoTen": "Đàm Thu Phương",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 344,
+    "MaSoNV": "21101",
+    "HoTen": "Nguyễn Ngọc Hoàn",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 345,
+    "MaSoNV": "18110",
+    "HoTen": "Lê Thị Bích Hương",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 346,
+    "MaSoNV": "17108",
+    "HoTen": "Bùi Thị Kim Oanh ",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 347,
+    "MaSoNV": "21119",
+    "HoTen": "Nguyễn Xuân Thiêm",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 348,
+    "MaSoNV": "22202",
+    "HoTen": "Đinh Thị Thu Trang",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 349,
+    "MaSoNV": "22295",
+    "HoTen": "Nguyễn Bích Hường",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 350,
+    "MaSoNV": "23031",
+    "HoTen": "Nguyễn Đức Anh",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 351,
+    "MaSoNV": "23124",
+    "HoTen": "Phùng Thị Ngọc Ánh",
+    "KhoaPhong": "P. Kinh doanh"
+  },
+  {
+    "STT": 352,
+    "MaSoNV": "19023",
+    "HoTen": "Nguyễn Thị Hà",
+    "KhoaPhong": "P. KHTH&QLCL"
+  },
+  {
+    "STT": 353,
+    "MaSoNV": "21141",
+    "HoTen": "Trần Thị Tâm",
+    "KhoaPhong": "P. KHTH&QLCL"
+  },
+  {
+    "STT": 354,
+    "MaSoNV": "21152",
+    "HoTen": "Ngô Thị Thu Trang",
+    "KhoaPhong": "P. KHTH&QLCL"
+  },
+  {
+    "STT": 355,
+    "MaSoNV": "BH2021",
+    "HoTen": "Nguyễn Thu Hường",
+    "KhoaPhong": "P. KHTH&QLCL"
+  },
+  {
+    "STT": 356,
+    "MaSoNV": "23047",
+    "HoTen": "Đinh Quang Hiếu",
+    "KhoaPhong": "P. KHTH&QLCL"
+  },
+  {
+    "STT": 357,
+    "MaSoNV": "19465",
+    "HoTen": "Nguyễn Hà Thu",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 358,
+    "MaSoNV": "21133",
+    "HoTen": "Trần Văn Hợp ",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 359,
+    "MaSoNV": "22151",
+    "HoTen": "Nguyễn Đức Bình",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 360,
+    "MaSoNV": "22056",
+    "HoTen": "Nguyễn Cao Sơn",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 361,
+    "MaSoNV": "20625",
+    "HoTen": "Nguyễn Tuyết Chinh",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 362,
+    "MaSoNV": "19212",
+    "HoTen": "Vũ Thu Huyền",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 363,
+    "MaSoNV": "20710",
+    "HoTen": "Nguyễn Thanh Mai",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 364,
+    "MaSoNV": "22217",
+    "HoTen": "Nguyễn Huy Hoàng",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 365,
+    "MaSoNV": "20687",
+    "HoTen": "Hồ Công Thành",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 366,
+    "MaSoNV": "19160",
+    "HoTen": "Nông Thị Thùy Chi",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 367,
+    "MaSoNV": "23036",
+    "HoTen": "Nguyễn Thị Ngọc Huyền",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 368,
+    "MaSoNV": "23038",
+    "HoTen": "Trần Nam Anh",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 369,
+    "MaSoNV": "23147",
+    "HoTen": "Nghiêm Thị Hằng",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 370,
+    "MaSoNV": "23148",
+    "HoTen": "Nguyễn Thị Kiều Trang",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 371,
+    "MaSoNV": "23209",
+    "HoTen": "Nguyễn Thị Thu Giang",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 372,
+    "MaSoNV": "23198",
+    "HoTen": "Vũ Đình Lộc",
+    "KhoaPhong": "P. Marketing"
+  },
+  {
+    "STT": 373,
+    "MaSoNV": "19093",
+    "HoTen": "Lê Hoàng Chiến",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 374,
+    "MaSoNV": "16201",
+    "HoTen": "Trần Thị Nhung",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 375,
+    "MaSoNV": "18098",
+    "HoTen": "Phùng Quân Hiếu",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 376,
+    "MaSoNV": "22204",
+    "HoTen": "Trương Thị Thùy Linh",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 377,
+    "MaSoNV": "23143",
+    "HoTen": "Nguyễn Hồng Nhung",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 378,
+    "MaSoNV": "18104",
+    "HoTen": "Nguyễn Minh Thao",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 379,
+    "MaSoNV": "20755",
+    "HoTen": "Hồ Ngọc Điền",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 380,
+    "MaSoNV": "19489",
+    "HoTen": "Nguyễn Thị Bích Ngọc",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 381,
+    "MaSoNV": "20531",
+    "HoTen": "Phạm Tuấn Nguyên",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 382,
+    "MaSoNV": "16103",
+    "HoTen": "Trần Thị Thu Hường",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 383,
+    "MaSoNV": "20771",
+    "HoTen": "Vũ Thị Hạnh",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 384,
+    "MaSoNV": "20787",
+    "HoTen": "Lại Thị Châm",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 385,
+    "MaSoNV": "21081",
+    "HoTen": "Nguyễn Xuân Hiệu",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 386,
+    "MaSoNV": "22161",
+    "HoTen": "Phùng Sinh Vượng",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 387,
+    "MaSoNV": "22148",
+    "HoTen": "Đoàn Huy Tùng",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 388,
+    "MaSoNV": "22046",
+    "HoTen": "Nguyễn Thị Hồng Dịu",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 389,
+    "MaSoNV": "23009",
+    "HoTen": "Bùi Viết Quang",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 390,
+    "MaSoNV": "23180",
+    "HoTen": "Lương Thị Nga",
+    "KhoaPhong": "P. NS-HCQT"
+  },
+  {
+    "STT": 391,
+    "MaSoNV": "23274",
+    "HoTen": "Đoàn Kim Quy",
+    "KhoaPhong": "P. NS-HCQT"
+  }
+]

@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="/image/x-icon" href="/Images/x-spin.png" />
+    <title>Quay Số Ngẫu Nhiên | XSPIN Gamification</title>
+    <link
+      rel="stylesheet"
+      href="/qsnn/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link href="/qsnn/css/index_loader.css" rel="stylesheet" />
+    <link href="/qsnn/css/css_v1.css" rel="stylesheet" />
+    <link href="/qsnn/css/animate_v1.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/qsnn/css/jquery.slotmachine.css" rel="stylesheet" />
+    <link href="/qsnn/css/jquery.slotmachine.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script type="text/javascript" src="/qsnn/js/jquery.js?ver=1.11.1"></script>
+    <script
+      type="text/javascript"
+      src="/qsnn/js/jquery-migrate.min.js?ver=1.2.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/qsnn/js/jquery-1.10.2.min.js?ver=4.1.21"
+    ></script>
+    <script type="text/javascript" src="/qsnn/js/custom.js?ver=4.1.21"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/jquery.mmenu.all.js"></script>
+    <script
+      type="text/javascript"
+      src="/qsnn/js/jquery.cookie.js?ver=4.1.21"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/qsnn/js/controller.js?ver=4.1.21"
+    ></script>
+    <script src="/qsnn/js/slotmachine.js"></script>
+    <script src="/qsnn/js/jquery.slotmachine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      function reload() {
+        window.location.href = "/";
+      }
+    </script>
+
+    <script src="/qsnn/js/TweenMax.js"></script>
+    <script src="/qsnn/js/bootstrap.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <link href="/qsnn/css/CustomDialog.css?v=1.21" rel="stylesheet" />
+
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+
+    <meta
+      property="og:image"
+      content="https://luckydraw.vn/Admin/Img/638169137894598663thumbnail-quayso.png"
+    />
+    <meta
+      name="description"
+      content="Game quay số ngẫu nhiên dùng để chọn khách hàng trao các giải thưởng có giá trị trong sự kiện YEP hoặc các party tri ân khách hàng"
+    />
+  </head>
+  <body style="min-width: 1359px">
+    <div id="dv">
+      <style>
+        div#load_screen {
+          background: #000;
+          opacity: 1;
+          position: fixed;
+          z-index: 9990;
+          top: 0px;
+          width: 100%;
+          height: 1600px;
+          transition: all 300ms ease-in-out;
+        }
+
+        div#load_screen > div#loading {
+          color: #fff;
+          width: 120px;
+          height: 24px;
+          margin: 300px auto;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+          width: 7px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      </style>
+      <div
+        id="load_screen"
+        style="
+          background: white;
+          position: fixed;
+          z-index: 9999;
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <i
+          id="loading_s"
+          class="fa fa-spinner fa-spin"
+          style="
+            border-radius: 50%;
+            display: block;
+            position: fixed;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: white;
+            border: 4px solid #1e1e1e;
+            color: white;
+            font-size: 300px;
+          "
+        ></i>
+      </div>
+      <style>
+        #loading_s::after {
+          content: "";
+          width: 25px;
+          height: 50px;
+          background: white;
+          position: absolute;
+          top: -40px;
+          animation: fa-spin 3000ms infinite linear;
+          z-index: 11000;
+        }
+
+        .loader {
+          border: 2px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 2px solid #a72929;
+          border-bottom: 2px solid #a72929;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 55px;
+          top: 20px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+
+        .loader2 {
+          border: 2px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 2px solid #a72929;
+          border-bottom: 2px solid #a72929;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 55px;
+          top: 20px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+          0% {
+            -webkit-transform: rotate(0deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(360deg);
+          }
+        }
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      </style>
+      <div
+        class="index_header2"
+        id="my_heaser"
+        style="height: 60px !important; position: absolute; padding-left: 11px"
+      >
+        <div>
+          <a
+            class="logo"
+            style="
+              overflow: hidden;
+              background: none !important;
+              position: absolute;
+              top: 15px;
+              width: fit-content;
+              float: left;
+              height: 60px;
+              z-index: 999;
+            "
+            href="https://benhvienbacha.vn/"
+            target="_blank"
+          >
+            <img
+              style="
+                visibility: visible;
+                margin-top: 0px;
+                margin-left: 0px;
+                height: 60px;
+              "
+              id="logo2"
+              src=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="index_banner_home" id="conatainerMain">
+        <div>
+          <script>
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+              // If Internet Explorer, return version number
+              var aaa =
+                "Trình duyệt web IE không tương thích với hệ thống quay số ngẫu nhiên, bạn vui lòng dùng trình duyệt web khác như chrome, cốc cốc, firefox ... để thực hiện";
+              alert(aaa);
+              setInterval(function () {
+                window.close();
+              }, 3000);
+            } // If another browser, return 0
+            else {
+            }
+            function InsertLog(loai, noidung, idvqmm, idqsnn) {
+              return new Promise(function (resolve, reject) {
+                resolve();
+              });
+            }
+          </script>
+          <div
+            id="background"
+            style="
+              width: 100%;
+              height: 100%;
+              position: fixed;
+              left: 0px;
+              top: 0px;
+              z-index: -1;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%; display: none; opacity: 0.8"
+              id="background_user"
+              src=""
+              class="stretch"
+              alt=""
+            />
+          </div>
+          <div class="index"></div>
+          <div class="index_banner_home">
+            <div id="ContentPlaceHolder1_container_mp3"></div>
+            <div id="container-audioDefault">
+              <audio id="mp3Quay">
+                <source
+                  src="/qsnn/mp3s/Spinning%20Sounds%20-%20Most%20recent_2.MP3"
+                  type="audio/mpeg"
+                />
+              </audio>
+              <audio id="mp3EndQuay">
+                <source src="/qsnn/mp3s/fanfare-winner.mp3" type="audio/mpeg" />
+              </audio>
+              <audio id="mp3Spin">
+                <source src="/qsnn/mp3s/sm-spin.mp3" type="audio/mpeg" />
+              </audio>
+              <audio id="mp3QuayNgan">
+                <source
+                  src="/qsnn/mp3s/Spinning(mp3cut.net).mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </div>
+          </div>
+
+          <div
+            class="modal animation-modal-x ng-scope ng-isolate-scope in"
+            role="dialog"
+            id="ketQuaDialog"
+            tabindex="-1"
+            style="z-index: 1050; display: none"
+          >
+            <div class="modal-dialog modal-result" style="height: fit-content">
+              <div class="modal-content">
+                <div class="ng-scope ng-isolate-scope">
+                  <div class="modal-header" id="ketQuaDialogHeader">
+                    <h4 class="modal-title">
+                      <p class="ng-scope">Kết quả quay số may mắn</p>
+                    </h4>
+                    <button
+                      type="button"
+                      class="close"
+                      id="ketQuaDialogClose"
+                      style="color: white; font-weight: bold"
+                    >
+                      ĐÓNG <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                  <div class="modal-body" style="padding: 0">
+                    <div class="tabs tabs-result ng-isolate-scope">
+                      <div
+                        class="tab-content"
+                        style="
+                          padding-left: 0;
+                          padding-right: 0;
+                          padding-top: 0;
+                          padding-bottom: 0;
+                          height: 500px;
+                        "
+                      >
+                        <div class="tab-pane ng-scope"></div>
+                        <div class="tab-pane ng-scope active">
+                          <div class="tab-pane-inner ng-scope">
+                            <ol class="sessions">
+                              <li class="session ng-scope">
+                                <div id="ketQuaDialogContent">
+                                  <div id="loaderKetQua" class="lds-ellipsis">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                  </div>
+                                  <div id="ketquacontainer"></div>
+                                </div>
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="tab-pane ng-scope"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .chasf:nth-child(2n + 1) {
+              background: #f6f6f6;
+            }
+
+            .fixedNgayGio {
+              width: 215px !important;
+            }
+
+            .chasf {
+              height: 130px !important;
+              border-bottom: 1px solid #e6e6e6 !important;
+            }
+
+            .chasf .cons {
+              border-left: 1px solid #ebebeb !important;
+            }
+
+            .conf {
+              height: 100px !important;
+            }
+
+            .consfour {
+              width: calc(33.333333% - 106.6666666px);
+            }
+
+            .consfive {
+              width: calc(33.333333% - 179px);
+            }
+
+            .consfix {
+              width: calc(25% - 80px - 54px);
+            }
+
+            .cssmaquaysocontainer2 {
+              width: 320px !important;
+              line-height: 60px;
+            }
+          </style>
+
+          <div
+            class="modal animation-modal-x ng-scope ng-isolate-scope in"
+            role="dialog"
+            id="kq_dialog"
+            tabindex="-1"
+            style="z-index: 1050; display: none"
+          >
+            <div class="modal-dialog modal-result" style="height: fit-content">
+              <div class="modal-content">
+                <div class="ng-scope ng-isolate-scope">
+                  <div class="modal-header" id="modal-IdResult">
+                    <h4 class="modal-title">
+                      <p class="ng-scope">Kết quả quay số may mắn</p>
+                    </h4>
+                    <button
+                      type="button"
+                      class="close"
+                      id="kq_dialog_close"
+                      style="color: white; font-weight: bold"
+                    >
+                      ĐÓNG <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="tabs tabs-result ng-isolate-scope">
+                      <ul class="nav nav-tabs">
+                        <li
+                          class="uib-tab nav-item ng-scope ng-isolate-scope active"
+                        >
+                          <a id="giai_t">Giải Nhì</a>
+                        </li>
+                      </ul>
+                      <div
+                        class="tab-content"
+                        style="
+                          padding-left: 10px;
+                          padding-right: 10px;
+                          padding-top: 0;
+                          padding-bottom: 0;
+                          height: 500px;
+                        "
+                      >
+                        <div class="tab-pane ng-scope"></div>
+                        <div class="tab-pane ng-scope active">
+                          <div class="tab-pane-inner ng-scope">
+                            <ol class="sessions">
+                              <li class="session ng-scope">
+                                <table class="table table-results">
+                                  <tbody id="tb_kq"></tbody>
+                                </table>
+                                <div id="kq2container"></div>
+                              </li>
+                            </ol>
+                          </div>
+                          <div id="cssketqua">
+                            <style>
+                              /*chỉnh chiều rộng khung chứa mã quay số*/ /*newline*/
+                              .cssmaquaysocontainer {
+                                /*newline*/
+                                width: 320px !important; /*newline*/
+                                line-height: 60px; /*newline*/
+                              }
+                              /*newline*/
+
+                              .consthree {
+                                /*newline*/
+                                width: calc(50% - 160px); /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              .constwo {
+                                /*newline*/
+                                width: calc(100% - 320px); /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              /*chỉnh màu vòng tròn số thứ tự*/ /*newline*/
+                              .cssvongtron {
+                                /*newline*/
+                                background: #b71919; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              /*Chỉnh chữ mã quay số*/ /*newline*/
+                              .cssmaquayso {
+                                /*newline*/
+                                color: black; /*newline*/
+                                font-weight: bold; /*newline*/
+                                font-size: 32px; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              /*chỉnh chữ các trường thông tin thêm*/ /*newline*/
+                              .cssfield {
+                                /*newline*/
+                                font-size: 22px; /*newline*/
+                                text-align: left; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              /*khung kết quả custom 1*/ /*newline*/
+                              .cssmaquayso1 {
+                                /*newline*/
+                                font-size: 35px !important; /*newline*/
+                                color: black; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              .cssfield1 {
+                                /*newline*/
+                                font-size: 30px !important; /*newline*/
+                                color: black; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              /*newline*/
+                              /*chỉnh màu sắc của khung kết quả*/ /*newline*/
+                              .modal .modal-header {
+                                /*newline*/
+                                background: #b71919; /*newline*/
+                                border-bottom: 5px solid #ed3e3e; /*newline*/
+                              }
+                              /*newline*/
+                              /*newline*/
+                              .tabs-result .nav-tabs > .active > a {
+                                /*newline*/
+                                border-bottom: 5px solid #ed3e3e; /*newline*/
+                                color: #b81919; /*newline*/
+                              }
+                              /*newline*/
+                              #conatainerMain {
+                                overflow: visible !important;
+                              }
+
+                              #congratsParent {
+                                padding: 0 15px;
+                              }
+
+                              #congrats {
+                                border-radius: 0;
+                                background: #0000009c;
+                                box-shadow: 0 0 800px 380px #0000009c;
+                              }
+                            </style>
+                          </div>
+                          <style>
+                            .chas > div:nth-child(1) {
+                              position: relative !important;
+                            }
+
+                            .chas > div:nth-child(1) p {
+                              padding: 0 !important;
+                            }
+
+                            .chas {
+                              position: relative;
+                              border-radius: 0 !important;
+                              border-bottom: 1px solid #cecece;
+                              height: 100px;
+                            }
+
+                            .chas .cons {
+                              margin-top: 20px;
+                              float: left;
+                              border-left: 1px solid #cecece;
+                              border-radius: 0;
+                              height: 60px;
+                              position: relative;
+                            }
+
+                            .border-left-none {
+                              border-left: none !important;
+                            }
+
+                            .border-bottom-none {
+                              border-bottom: none !important;
+                            }
+
+                            .consone {
+                              width: 100% !important;
+                            }
+
+                            .consone p {
+                              text-align: center !important;
+                            }
+
+                            /*.consthree {
+										width: calc(50% - 132.5px);
+									}
+
+									.constwo {
+										width: calc(100% - 265px);
+									}*/
+
+                            .chas .cons p {
+                              margin: 0;
+                              display: table-cell;
+                              vertical-align: middle;
+                              position: absolute;
+                              top: 50%;
+                              padding: 0 20px;
+                              width: 100%;
+                              transform: translateY(-50%);
+                            }
+                          </style>
+                        </div>
+                        <div class="tab-pane ng-scope"></div>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      onclick="QuayLai()"
+                      style="
+                        height: 25px;
+                        margin-left: 20px !important;
+                        display: inline-block;
+                        line-height: 23px;
+                        margin-left: 0;
+                        text-align: right;
+                        color: red;
+                        font-size: 23px;
+                        cursor: pointer;
+                      "
+                    >
+                      X Hủy kết quả
+                    </div>
+                    <div
+                      style="
+                        display: inline-block;
+                        width: calc(100% - 180px);
+                        margin-top: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      <div
+                        id="dvLoading"
+                        style="color: red; font-weight: bold; display: none"
+                      >
+                        <img src="qsnn/img/Loading.gif" style="width: 27px" />
+                        Hệ thống đang lưu kết quả, bạn vui lòng chờ trong giây
+                        lát.....
+                      </div>
+                      <a
+                        id="dvQuaySo"
+                        class="link-download"
+                        style="width: 200px"
+                      >
+                        <strong>
+                          <h4
+                            style="
+                              max-width: 300px !important;
+                              background: #40ab00;
+                              cursor: pointer;
+                              color: white;
+                              font-weight: bold;
+                              width: 215px !important;
+                              border: 3px #ffffff solid;
+                              font-size: 19px !important;
+                              padding: 10px 20px;
+                              border-radius: 6px;
+                            "
+                            class="ng-scope"
+                            id="luukq_"
+                            onclick="XacNhan('133521','36244,05249,')"
+                          >
+                            <span class="glyphicon glyphicon-ok"></span
+                            >&nbsp;Lưu kết quả
+                          </h4>
+                        </strong>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="index_middle">
+            <span id="span-tenCongTy" class="title_text">Tên công ty</span>
+
+            <span id="span-tenChuongTrinh" class="title_text" style=""
+              >Tên chương trình</span
+            >
+
+            <div id="top_box" style="margin-top: 5%">
+              <div class="setbg number_s_box" id="my-numbers2">
+                <div id="machine1" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers3">
+                <div id="machine2" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers4">
+                <div id="machine3" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers5">
+                <div id="machine4" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers6">
+                <div id="machine5" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers7">
+                <div id="machine6" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers8">
+                <div id="machine7" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers9">
+                <div id="machine8" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers10">
+                <div id="machine9" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers11">
+                <div id="machine10" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers12">
+                <div id="machine11" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers13">
+                <div id="machine12" class="machin_s"></div>
+              </div>
+
+              <div class="setbg number_s_box" id="my-numbers14">
+                <div id="machine13" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers15">
+                <div id="machine14" class="machin_s"></div>
+              </div>
+              <div class="setbg number_s_box" id="my-numbers16">
+                <div id="machine15" class="machin_s"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="container-bottom" style="width: 1366px; position: relative">
+            <div style="float: left; width: 300px">
+              <img
+                class="img_reward"
+                id="reward_img_id"
+                style="
+                  margin-right: auto;
+                  min-height: 1px;
+                  float: left;
+                  display: block;
+                  height: auto !important;
+                  width: 250px;
+                "
+                src=""
+              />
+            </div>
+            <div
+              id="congratsParent"
+              style="
+                width: calc(100% - 710px);
+                float: left;
+                height: 200px;
+                position: relative;
+                background-size: 140% 140%;
+                background-position: 86% 55%;
+              "
+            >
+              <div id="congrats" style="visibility: hidden">
+                <h1 style="font-size: 40px; padding: 20px">
+                  Chúc mừng Quý khách
+                  <span style="color: #32bf32" id="span-nguoiTrungGiai"></span
+                  >có mã số
+                  <span id="soMayMan" style="color: #32bf32">abc</span> trúng
+                  thưởng
+                </h1>
+              </div>
+            </div>
+
+            <div style="float: right; width: 410px">
+              <div
+                style="
+                  margin-bottom: 8px;
+                  float: left;
+                  justify-content: center;
+                  margin-left: -15%;
+                "
+              >
+                <div
+                  id="ContentPlaceHolder1_div_btns"
+                  style="margin-bottom: 0px; float: left"
+                >
+                  <div
+                    style="margin-bottom: 0px; margin-left: 0px; float: left"
+                    class="dropdown"
+                  >
+                    <button
+                      id="btn_ChuongTrinh"
+                      class="btn btn-primary dropdown-toggle"
+                      style="width: 255px"
+                      type="button"
+                      data-toggle="dropdown"
+                    >
+                      Chọn giải quay <span class="caret"></span>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      style="max-height: 200px; overflow-y: auto"
+                    >
+                      <li>
+                        <a onclick='LoadLanQuay("111","Giải Nhất","false")'
+                          >Giải Nhất</a
+                        >
+                      </li>
+                      <li>
+                        <a onclick='LoadLanQuay("112","Giải Nhì","false")'
+                          >Giải Nhì</a
+                        >
+                      </li>
+                      <li>
+                        <a onclick='LoadLanQuay("113","Giải Ba","false")'
+                          >Giải Ba</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          onclick='LoadLanQuay("114","Giải Khuyến Khích","false")'
+                          >Giải Khuyến Khích</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  id="id_GiaiQuay"
+                  style="margin-bottom: 0px; margin-left: 10px; float: left"
+                  class="dropdown"
+                ></div>
+
+                <div
+                  id="id_LanQuay"
+                  style="
+                    margin-bottom: 0px;
+                    margin-left: 0;
+                    float: left;
+                    height: 52px;
+                  "
+                  class="dropdown"
+                ></div>
+              </div>
+
+              <div style="position: relative">
+                <div class="loadersss"></div>
+              </div>
+
+              <div
+                id="btnquayso_container"
+                style="
+                  float: left;
+                  transition: 0ms all;
+                  display: none;
+                  position: relative;
+                  width: 100%;
+                  height: 100px;
+                  margin-left: -15%;
+                "
+              >
+                <button
+                  type="button"
+                  class="button-ss circle-ss"
+                  onclick='startMachine("", "",false)'
+                  id="btn_quayso"
+                >
+                  QUAY
+                </button>
+              </div>
+              <div
+                id="btnDungLai_container"
+                style="
+                  float: left;
+                  transition: 0ms all;
+                  display: none;
+                  position: relative;
+                  width: 100%;
+                  height: 100px;
+                "
+              >
+                <button type="button" class="button-ss circle-ss">DỪNG</button>
+              </div>
+              <div
+                id="btns_lefts"
+                style="
+                  float: left;
+                  width: 412px;
+                  height: 55px;
+                  position: absolute;
+                  top: 205px;
+                  visibility: hidden;
+                  margin-left: -4%;
+                "
+              >
+                <div
+                  id="button-XacNhan"
+                  onclick="LuuKetQua(false)"
+                  style="
+                    float: left;
+                    width: calc(50% - 5px);
+                    height: 47px;
+                    text-align: center;
+                    line-height: 23px;
+                    margin-right: 5px;
+                    text-align: center;
+                  "
+                  class=""
+                >
+                  Xác nhận
+                </div>
+
+                <div
+                  id="button-quayLai"
+                  onclick="QuayLai()"
+                  style="
+                    float: left;
+                    width: calc(50% - 5px);
+                    height: 47px;
+                    text-align: center;
+                    line-height: 23px;
+                    margin-left: 5px;
+                    text-align: center;
+                  "
+                >
+                  Hủy bỏ
+                </div>
+              </div>
+            </div>
+            <div>
+              <button
+                onclick="moDanhSach()"
+                id="button_ketqua"
+                style="visibility: hidden"
+              >
+                Danh Sách Kết Quả
+              </button>
+            </div>
+          </div>
+          <style>
+            .loadersss {
+              border: 8px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 8px solid #cd2e2e;
+              width: 60px;
+              left: 174px;
+              position: absolute;
+              height: 60px;
+              top: 101px;
+              display: none;
+              -webkit-animation: spin 900ms linear infinite;
+              animation: spin 900ms linear infinite;
+            }
+
+            /* Safari */
+            @-webkit-keyframes spin {
+              0% {
+                -webkit-transform: rotate(0deg);
+              }
+
+              100% {
+                -webkit-transform: rotate(360deg);
+              }
+            }
+
+            @keyframes spin {
+              0% {
+                transform: rotate(0deg);
+              }
+
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style>
+          <p id="id_giai_quay" style="visibility: hidden"></p>
+          <input type="hidden" id="idGiai_" />
+          <input type="hidden" id="idLanQuay_" />
+          <input type="hidden" id="tenLanQuay_" />
+          <input
+            id="input-tenGiaiQuayHienTai"
+            type="text"
+            value=""
+            style="display: none"
+          />
+          <input
+            id="input-idGiaiQuayHienTai"
+            type="text"
+            value=""
+            style="display: none"
+          />
+          <script>
+            window.onload = function () {
+              idUser = "";
+              arrToOut = "";
+              idSuKien = getUrlVars()["idSuKien"];
+              GetIdUser();
+              setUpCaiDat().then(function () {
+                SetO(soLuongOQuaySo).then(function () {
+                  appendHTMLfortag().then(function () {
+                    $("#load_screen").css("display", "none");
+                  });
+                });
+              });
+            };
+
+            function SetO(x) {
+              return new Promise(function (resolve, reject) {
+                var quantity = x;
+                switch (quantity) {
+                  case "2":
+                    ChangeBox("150", "2");
+                    break;
+                  case "3":
+                    ChangeBox("150", "3");
+                    break;
+                  case "4":
+                    ChangeBox("150", "4");
+                    break;
+                  case "5":
+                    ChangeBox("150", "5");
+                    break;
+                  case "6":
+                    ChangeBox("150", "6");
+                    break;
+                  case "7":
+                    ChangeBox("150", "7");
+                    break;
+                  case "8":
+                    ChangeBox("150", "8");
+                    break;
+                  case "9":
+                    ChangeBox("140", "9");
+                    break;
+                  case "10":
+                    ChangeBox("125", "10");
+                    break;
+                  case "11":
+                    ChangeBox("115", "11");
+                    break;
+                  case "12":
+                    ChangeBox("109", "12");
+                    break;
+                  case "13":
+                    ChangeBox("125", "13");
+                    $("body").css("min-width", "1700px");
+                    break;
+                  case "14":
+                    ChangeBox("115", "14");
+                    $("body").css("min-width", "1700px");
+                    break;
+                  case "15":
+                    ChangeBox("109", "15");
+                    $("body").css("min-width", "1700px");
+                    break;
+                }
+
+                function ChangeBox(width, pos) {
+                  $("#top_box").css("width", "fit-content");
+                  $("#top_box > div:nth-child(1)").css("margin-left", 0 + "px");
+                  for (var i = 1; i <= parseInt(pos); i++) {
+                    $("#top_box > div:nth-child(" + i + ")").css(
+                      "display",
+                      "block"
+                    );
+                  }
+                  tongSo = pos;
+                  $(".machin_s").css("width", width + "px");
+                }
+                resolve("true");
+              });
+            }
+
+            //------------------------------------------------------------------BUTTON QUAY SỐ CLICK
+            function QuaySo(LanQuay, idLanQuay, idGiai) {
+              //$('#container-bottom > div:nth-child(2)').css("background-image", "");
+              //$('#btnquayso_container').css("display", "none");
+
+              var sounds = document.getElementsByTagName("audio");
+              for (i = 0; i < sounds.length; i++) sounds[i].pause();
+
+              var source = $("#audio" + idGiai + " source").attr("src");
+              if ((typeof source !== "undefined") != false) {
+                playAudio("audio" + idGiai, true);
+              } else {
+              }
+              let arrnum1 = [
+                23262, 14012, 14086, 16003, 16020, 16024, 16028, 16029, 16043,
+                16051, 16062, 16067, 16073, 16075, 16075, 16079, 16103, 16201,
+                16225, 16226, 17010, 17026, 17032, 17034, 17035, 17039, 17044,
+                17054, 17059, 17063, 17074, 17077, 17080, 17082, 17083, 17108,
+                17118, 17181, 17194, 17195, 18038, 18042, 18045, 18060, 18064,
+                18085, 18097, 18098, 18099, 18100, 18104, 18106, 18110, 18133,
+                18161, 18191, 19023, 19093, 19136, 19145, 19160, 19162, 19212,
+                19227, 19230, 19237, 19238, 19239, 19247, 19258, 19259, 19282,
+                19283, 19287, 19294, 19295, 19296, 19297, 19300, 19303, 19312,
+                19313, 19329, 19381, 19389, 19395, 19402, 19404, 19409, 19433,
+                19452, 19463, 19465, 19471, 19473, 19483, 19489, 20013, 20345,
+                20501, 20514, 20519, 20527, 20531, 20533, 20556, 20568, 20590,
+                20609, 20610, 20612, 20615, 20625, 20640, 20668, 20673, 20681,
+                20685, 20687, 20688, 20692, 20697, 20702, 20707, 20710, 20732,
+                20733, 20735, 20736, 20737, 20738, 20739, 20741, 20745, 20750,
+                20751, 20754, 20755, 20761, 20762, 20766, 20771, 20774, 20784,
+                20785, 20786, 20787, 20789, 20802, 20804, 20815, 20838, 20861,
+                21020, 21021, 21024, 21028, 21029, 21030, 21034, 21039, 21042,
+                21050, 21054, 21056, 21064, 21067, 21076, 21081, 21085, 21087,
+                21101, 21103, 21106, 21117, 21119, 21121, 21122, 21124, 21129,
+                21130, 21133, 21135, 21140, 21141, 21144, 21148, 21152, 21164,
+                21172, 21177, 21178, 21183, 21191, 21192, 21197, 21198, 21200,
+                21211, 21216, 21223, 21224, 21237, 21254, 21261, 21262, 21274,
+                21275, 22002, 22005, 22006, 22019, 22020, 22022, 22024, 22028,
+                22030, 22031, 22038, 22046, 22047, 22051, 22056, 22065, 22082,
+                22083, 22087, 22095, 22101, 22107, 22120, 22121, 22124, 22125,
+                22129, 22141, 22143, 22148, 22151, 22157, 22159, 22160, 22161,
+                22162, 22163, 22164, 22167, 22171, 22177, 22179, 22181, 22182,
+                22183, 22184, 22185, 22187, 22188, 22189, 22190, 22194, 22196,
+                22201, 22202, 22203, 22204, 22208, 22209, 22214, 22215, 22216,
+                22217, 22220, 22222, 22226, 22228, 22267, 22271, 22272, 22281,
+                22286, 22287, 22288, 22292, 22293, 22295, 22299, 22310, 22311,
+                22314, 22315, 22316, 22324, 22330, 22331, 22334, 22335, 22336,
+                22337, 22338, 22371, 23005, 23007, 23009, 23013, 23014, 23015,
+                23016, 23029, 23031, 23034, 23036, 23038, 23039, 23040, 23041,
+                23043, 23046, 23047, 23053, 23054, 23057, 23066, 23070, 23075,
+                23076, 23077, 23079, 23080, 23081, 23082, 23083, 23086, 23096,
+                23106, 23111, 23116, 23117, 23118, 23123, 23124, 23127, 23143,
+                23144, 23145, 23147, 23148, 23150, 23151, 23152, 23153, 23159,
+                23162, 23163, 23164, 23165, 23166, 23167, 23169, 23173, 23174,
+                23180, 23198, 23202, 23205, 23208, 23209, 23210, 23211, 23212,
+                23213, 23214, 23215, 23216, 23217, 23218, 23220, 23225, 23226,
+                23227, 23229, 23230, 23231, 23232, 23233, 23235, 23236, 23261,
+                23272, 23273, 23274,
+              ];
+
+              var num1 = arrnum1[Math.floor(Math.random() * arrnum1.length)];
+
+              console.log($("#btn_ChuongTrinh"));
+              localStorage.setItem(
+                "GiaiThuong",
+                JSON.stringify({
+                  LanQuay: LanQuay,
+                  idGiai: idGiai,
+                  giaiThuong: $("#btn_ChuongTrinh").text(),
+                })
+              );
+              setTimeout(function () {
+                var chuoichung =
+                  `${num1}~||||` +
+                  "<div class='cssfield1'>" +
+                  "Khách 2" +
+                  "</div>" +
+                  "<div class='cssfield1'>" +
+                  "Phòng ban 1" +
+                  "</div>";
+
+                arrKetQua = chuoichung.split("||||")[0].split("~");
+                arrTen = chuoichung.split("||||")[1].split("~");
+
+                var el = $("#tb_kq");
+                while (el.lastChild) el.removeChild(el.lastChild);
+                //$("#tb_kq").html("");
+                var n = 0;
+                $("#tb_kq").html("");
+                var htmlspeacialll = "";
+                var indexI = 1;
+                if (true) {
+                  for (var i = 0; i < arrKetQua.length - 1; i++) {
+                    if (
+                      arrTen[0].split("<div class='cssfield1'>").length == 1
+                    ) {
+                      htmlspeacialll +=
+                        '<div class="chas">\
+                   		<span class= "cssvongtron" style = "position: absolute; left: 0; font-size: 13px; width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 34px;" > ' +
+                        (i + 1) +
+                        '</span>\
+                   												<div class="cssmaquaysocontainer cons consone border-left-none" style="">\
+                   													<p class="cssmaquayso" style="text-align: right; padding-right: 15px; display: block">' +
+                        arrKetQua[i] +
+                        '</p>\
+                   												</div>\
+                   												<div style="clear: both">\
+                   												</div>\
+                   										   </div >';
+                    } else if (
+                      arrTen[0].split("<div class='cssfield1'>").length == 2
+                    ) {
+                      htmlspeacialll +=
+                        '<div class="chas">\
+                   						<span class="cssvongtron" style = "position: absolute; left: 0; font-size: 13px; width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 34px;" >' +
+                        (i + 1) +
+                        '</span>\
+                   							<div class="cons constwo border-left-none cssmaquaysocontainer">\
+                   								<p class="cssmaquayso" style="text-align: right; padding-right: 15px; display: block">' +
+                        arrKetQua[i] +
+                        '</p>\
+                   							</div>\
+                   							<div class="cons constwo">\
+                   								<p class="cssfield">' +
+                        arrTen[i]
+                          .split("<div class='cssfield1'>")[1]
+                          .split("</div>")[0] +
+                        '</p>\
+                   							</div>\
+                   							<div style="clear: both">\
+                   							</div>\
+                   							</div >';
+                    } else if (
+                      arrTen[0].split("<div class='cssfield1'>").length == 3
+                    ) {
+                      htmlspeacialll +=
+                        '<div class="chas">\
+                   						<span class="cssvongtron" style = "position: absolute; left: 0; font-size: 13px; width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 34px;" > ' +
+                        (i + 1) +
+                        '</span>\
+                   							<div class="cssmaquaysocontainer cons consthree border-left-none">\
+                   								<p class="cssmaquayso" style="text-align: right; padding-right: 15px; display: block">' +
+                        arrKetQua[i] +
+                        '</p>\
+                   							</div>\
+                   							<div class="cons consthree">\
+                   								<p class="cssfield">' +
+                        arrTen[i]
+                          .split("<div class='cssfield1'>")[1]
+                          .split("</div>")[0] +
+                        '</p>\
+                   							</div>\
+                   							<div class="cons consthree">\
+                   								<p class="cssfield">' +
+                        arrTen[i]
+                          .split("<div class='cssfield1'>")[2]
+                          .split("</div>")[0] +
+                        '</p>\
+                   							</div>\
+                   							<div style="clear: both">\
+                   							</div>\
+                   							</div>';
+                    }
+                  }
+                  //
+                  $(".table.table-results").css("display", "none");
+                }
+
+                for (var i = 0; i < (arrKetQua.length - 1) / 3; i++) {
+                  var position1 =
+                    arrKetQua[n] +
+                    (typeof arrTen[n] === "undefined" ||
+                    arrTen[n].trim() === ":"
+                      ? ""
+                      : arrTen[n]);
+                  var position2 =
+                    arrKetQua[n + 1] +
+                    (typeof arrTen[n + 1] === "undefined" ||
+                    arrTen[n + 1].trim() === ":"
+                      ? ""
+                      : arrTen[n + 1]);
+                  var position3 =
+                    arrKetQua[n + 2] +
+                    (typeof arrTen[n + 2] === "undefined" ||
+                    arrTen[n + 2].trim() === ":"
+                      ? ""
+                      : arrTen[n + 2]);
+                  if (arrKetQua[n] === undefined || arrKetQua[n] === null) {
+                    position1 = "";
+                  }
+                  if (
+                    arrKetQua[n + 1] === undefined ||
+                    arrKetQua[n + 1] === null
+                  ) {
+                    position2 = "";
+                  }
+                  if (
+                    arrKetQua[n + 2] === undefined ||
+                    arrKetQua[n + 2] === null
+                  ) {
+                    position3 = "";
+                  }
+                  n += 3;
+                  var htmlB = "";
+
+                  htmlB += "<tr class='ng-scope Confirmed undefined'>";
+                  if (position1 != "") {
+                    htmlB +=
+                      "<td class='stt ng-binding cssmaquayso1' style='position: relative'><span class='cssvongtron' style='position: absolute; top: 0; left: 0; font-size: 13px;  width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 5px;'>" +
+                      indexI +
+                      "</span>" +
+                      position1 +
+                      "</td>";
+                    indexI++;
+                  }
+
+                  if (position2 != "") {
+                    htmlB +=
+                      "<td class='resid ng-binding cssmaquayso1' style='position: relative'><span class='cssvongtron' style='position: absolute; top: 0; left: 0; font-size: 13px;  width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 5px;'>" +
+                      indexI +
+                      "</span>" +
+                      position2 +
+                      "</td>";
+                    indexI++;
+                  }
+
+                  if (position3 != "") {
+                    htmlB +=
+                      "<td class='ng-binding cssmaquayso1' style='position: relative'><span class='cssvongtron' style='position: absolute; top: 0; left: 0; font-size: 13px;  width: 30px; color: white; font-weight: bold; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; top: 5px;'>" +
+                      indexI +
+                      "</span>" +
+                      position3 +
+                      "</td></tr>";
+                    indexI++;
+                  }
+
+                  $("#tb_kq").append(htmlB);
+                }
+                $("#kq2container").html(htmlspeacialll);
+
+                var ketqua = chuoichung.split("|||")[0].split("~")[0];
+
+                if (ketqua.trim().length < parseFloat(soLuongOQuaySo)) {
+                  for (
+                    var i = 0;
+                    i < parseFloat(soLuongOQuaySo) - ketqua.trim().length;
+                    i++
+                  ) {
+                    ketqua = " " + ketqua;
+                  }
+                }
+
+                var html4 =
+                  "<button  type='button' style='background:#" +
+                  colorMauNutBam +
+                  "' class='button-ss circle-ss' onclick='SpinQuaySo(\"" +
+                  arrKetQua +
+                  '","' +
+                  ketqua +
+                  "\")' id='btn_quayso'>QUAY</button>";
+                $("#btnquayso_container").css("display", "block");
+                $("#btnquayso_container").html(html4);
+
+                $("#luukq_").attr(
+                  "onclick",
+                  "XacNhan('" + idLanQuay + "','" + arrKetQua + "')"
+                );
+                arrToOut = arrKetQua;
+
+                $("#btn_lanquay").removeAttr("disabled");
+                $("#btn_ChuongTrinh").removeAttr("disabled");
+                $(".loadersss").css("display", "none");
+              }, 1);
+            }
+
+            function GetThongTinKH(maQuaySo) {
+              return new Promise(function (resolve, reject) {
+                var errorType = "true";
+                if (!errorType.includes("false")) {
+                  var sounds = document.getElementsByTagName("audio");
+                  for (i = 0; i < sounds.length; i++) sounds[i].pause();
+                  let nhanVienTrung = listNhanVien.find(
+                    (nhanvien) => nhanvien.MaSoNV == maQuaySo
+                  );
+                  listTrungGiaiTemp = [nhanVienTrung];
+
+                  var chiung = `<span style='color:#D15A8E'>${nhanVienTrung.HoTen}</span> <br>Mã Nhân Viên <span style='color:#D15A8E'>${maQuaySo}</span><br>
+             <span> ${nhanVienTrung.KhoaPhong}
+            ~~~~~~~~~~`;
+
+                  var arr = ("~" + maQuaySo + "~" + chiung).split("~");
+                  var arrCauChucMung = cauChucMung.split("|")[1].split("-");
+
+                  var arrValue = "";
+                  for (var i = 1; i < arrCauChucMung.length; i++) {
+                    if (
+                      arrCauChucMung[i].split(" ")[0].toLowerCase() == "teng"
+                    ) {
+                      arrValue +=
+                        " <span style='color: #" +
+                        arrCauChucMung[i].split(" ")[1] +
+                        "'>" +
+                        $("#input-tenGiaiQuayHienTai").val() +
+                        "</span> |~|";
+                    } else
+                      arrValue +=
+                        " <span style='color: #" +
+                        arrCauChucMung[i].split(" ")[1] +
+                        "'>" +
+                        arr[
+                          parseInt(
+                            arrCauChucMung[i]
+                              .split(" ")[0]
+                              .substring(
+                                1,
+                                arrCauChucMung[i].split(" ")[0].length
+                              )
+                              .toString()
+                          )
+                        ] +
+                        "</span> |~|";
+                  }
+
+                  var arrCauChucMungS = cauChucMung.split("|")[1].split("_");
+
+                  var finalString = "";
+                  for (var i = 0; i < arrCauChucMungS.length - 1; i++) {
+                    finalString +=
+                      arrCauChucMungS[i] + arrValue.split("|~|")[i];
+                  }
+                  finalString +=
+                    arrCauChucMungS[arrCauChucMungS.length - 1].split("-")[0];
+
+                  if (true) {
+                    $("#congrats > h1").css(
+                      "color",
+                      "#" + cauChucMung.split("|")[0]
+                    );
+                    $("#congrats > h1").css("text-shadow", "1px 1px #6f6f6f");
+                    $("#congrats > h1").html(finalString);
+
+                    setTimeout(function () {
+                      $("#congrats").css("visibility", "visible");
+                      pauseAudio("mp3Quay");
+                      pauseAudio("mp3EndQuay");
+                      playAudio("mp3EndQuay");
+                      fancyPopIn();
+                    }, 300);
+                  } else {
+                    setTimeout(function () {
+                      pauseAudio("mp3Quay");
+                      pauseAudio("mp3EndQuay");
+                      playAudio("mp3EndQuay");
+                    }, 300);
+                  }
+                  $("#btns_lefts").css("visibility", "visible");
+
+                  resolve("true");
+                } else if (errorType == "false1") {
+                  Swal({
+                    type: "error",
+                    title: "Lỗi",
+                    text:
+                      "Lỗi SQL: " +
+                      xmlhttp.responseText.substring(
+                        6,
+                        xmlhttp.responseText.length
+                      ),
+                  });
+                } else if (errorType == "falseex") {
+                  Swal({
+                    type: "error",
+                    title: "Ngoại lệ",
+                    text: xmlhttp.responseText
+                      .toString()
+                      .substring(6, xmlhttp.responseText.toString().length),
+                  });
+                }
+              });
+            }
+            //-----------------------------------------------------------------CÁC FUNCTION XỬ LÝ AUDIO
+            function playAudio(x, y) {
+              if (y) {
+                window.myInterval = setInterval(function () {
+                  document.getElementById(x).pause();
+                  document.getElementById(x).currentTime = 240;
+                  document.getElementById(x).play();
+                }, 50);
+              } else {
+                document.getElementById(x).currentTime = 0;
+                document.getElementById(x).play();
+              }
+            }
+
+            function pauseAudio(x) {
+              document.getElementById(x).pause();
+            }
+
+            function muteAudio(x) {
+              var vid = document.getElementById(x);
+              vid.muted = true;
+            }
+
+            function unMuteAudio(x) {
+              var vid = document.getElementById(x);
+              vid.muted = false;
+            }
+
+            function SpinQuaySo(arrKetQua, ketqua) {
+              InsertLog("Quay số QSNN", "Nhấn nút quay số", "", idSuKien).then(
+                function () {},
+                function () {}
+              );
+
+              $("#container-bottom > div:nth-child(2)").css(
+                "background-image",
+                ""
+              );
+              $("#btnquayso_container").css("display", "none");
+              if (arrKetQua.split(",").length <= 2) {
+                $("#button-XacNhan").attr("onclick", "LuuKetQua(false)");
+                $("#button-XacNhan").html("Xác nhận");
+                startMachine(ketqua + "", $("#id_giai_quay").text(), false);
+              } else {
+                $("#button-XacNhan").attr("onclick", "LuuKetQua(true)");
+                $("#button-XacNhan").html("Kết quả");
+                startMachine(ketqua + "", $("#id_giai_quay").text(), true);
+              }
+              disableBtns();
+            }
+
+            //-----------------------------------------------------------------LOAD CÁC LẦN QUAY LÊN SELECT LẦN QUAY
+            function LoadLanQuay(idGiai, tenGiai, isLoad) {
+              $("#giai_t").html(tenGiai);
+              $("#input-tenGiaiQuayHienTai").val(tenGiai);
+              $("#id_giai_quay").text(idGiai);
+              if (isLoad.toLowerCase() == "false") {
+                $("#btn_ChuongTrinh").html(tenGiai);
+              }
+              $("#id_LanQuay").html("");
+              $("#btnquayso_container").css("display", "none");
+              $("#button_ketqua").css("visibility", "visible");
+              var html = "";
+              var soGiai = 3;
+              if (idGiai == 111) {
+                soGiai = 1;
+              } else if (idGiai == 112) {
+                soGiai = 2;
+              }
+              html +=
+                "<button id='btn_lanquay' style='width: 165px; margin-left: 10px;' class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>Chọn Lần quay <span class='caret'></span> </button> <ul class='dropdown-menu'> ";
+              for (var i = 0; i < soGiai; i++) {
+                html += `<li><a id='alq${idGiai}' OnClick='LanQuayClick(${i}, "Lần ${
+                  i + 1
+                }", ${idGiai}, "${tenGiai}")'>Lần ${i + 1}</a></li>`;
+              }
+
+              html += "</ul>";
+              $("#id_LanQuay").html(html);
+              var html2 = tenGiai + " <span class='caret'></span>";
+              $("#title_giai").html(tenGiai);
+              $("#kq_quayso").html(tenGiai);
+
+              document.getElementById("reward_img_id").src =
+                "./qsnn/img/" + idGiai + ".png";
+              var sounds = document.getElementsByTagName("audio");
+              for (i = 0; i < sounds.length; i++) sounds[i].pause();
+              SetColor();
+            }
+
+            //---------------------------------------------------FUNCTION THỰC THI KHI CHỌN LẦN QUAY
+            function LanQuayClick(idLanQuay, lanQuay, idGiai, tenGiai) {
+              reSetPr();
+              appendHTMLfortag();
+              var html2 = "" + lanQuay + " <span class='caret'></span>";
+              $("#btn_lanquay").attr("disabled", "disabled");
+              $("#btn_ChuongTrinh").attr("disabled", "disabled");
+              $(".loadersss").css("display", "block");
+              $("#btn_lanquay").html(html2);
+              $("#title_lan").html(lanQuay);
+              $("#title_giai").html(tenGiai);
+              $("#idLanQuay_").val(idLanQuay);
+              $("#tenLanQuay_").val(lanQuay);
+              $("#idGiai_").val(idGiai);
+              //var html4 = "<button  type='button'  class='button-ss circle-ss' onclick='SpinQuaySo(\"" + lanQuay + "\",\"" + idLanQuay + "\",\"" + idGiai + "\")' id='btn_quayso'>QUAY</button>";
+              //$('#btnquayso_container').css("display", "block");
+              //$("#btnquayso_container").html(html4);
+              QuaySo(lanQuay, idLanQuay, idGiai);
+
+              SetColor();
+            }
+            function loading() {
+              Swal.fire({
+                title: "Đang lưu kết quả...",
+              });
+              Swal.showLoading();
+            }
+
+            //---------------------------------------------------XÁC NHẬN CLICK
+            function LuuKetQua(isMoLaiKetQua) {
+              if (isMoLaiKetQua) {
+                $("#kq_dialog").css("display", "block");
+                setTimeout(function () {
+                  $("#kq_dialog").removeClass("animated tada");
+                  $("#kq_dialog").addClass("animated tada");
+                }, 100);
+
+                setTimeout(function () {
+                  $("#kq_dialog").css("background", "rgba(0, 0, 0, 0.42)");
+                  $(".modal-dialog.modal-result").css(
+                    "box-shadow",
+                    "0px 0px 150px 200px #0000004d"
+                  );
+                }, 1000);
+              } else $("#luukq_").trigger("click");
+            }
+            function XacNhan(IdLanQuay, SoMayMan) {
+              InsertLog(
+                "Quay số QSNN",
+                "Nhấn nút lưu kết quả",
+                "",
+                idSuKien
+              ).then(
+                function () {},
+                function () {}
+              );
+              loading();
+              Swal.fire({
+                title: "Lưu kết quả.",
+                text: "Bạn có chắc muốn lưu kết quả này không?",
+                type: "warning",
+                width: 400,
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Lưu!",
+              }).then(function (result) {
+                if (result.value) {
+                  let listTrungGiai = localStorage.getItem("listTrungGiai");
+                  let giaiThuong = localStorage.getItem("GiaiThuong");
+                  listTrungGiaiTemp[0].GiaiThuong = JSON.parse(giaiThuong);
+                  if (!listTrungGiai) {
+                    listTrungGiai = []; // Initialize as an array if it's not present in localStorage
+                  } else {
+                    try {
+                      listTrungGiai = JSON.parse(listTrungGiai); // Parse the JSON if it's valid
+                    } catch (error) {
+                      console.error("Error parsing JSON:", error);
+                      listTrungGiai = []; // Reset to an empty array if parsing fails
+                    }
+                  }
+                  listTrungGiai = listTrungGiai.concat(listTrungGiaiTemp);
+
+                  localStorage.setItem(
+                    "listTrungGiai",
+                    JSON.stringify(listTrungGiai)
+                  ); // Store in localStorage
+                  $("#dvLoading").css("display", "block");
+                  $("#dvQuaySo").css("display", "none");
+                  $("#kq_dialog_close").css("display", "none");
+
+                  if (isQc.toLowerCase().trim() == "true") {
+                    $("#container-bottom > div:nth-child(2)").css(
+                      "background-image",
+                      "url('/Images/qc.jpg')"
+                    );
+                  }
+                  //Reset các số
+                  appendHTMLfortag();
+                  //ẩn bottom buttons
+                  $("#btns_lefts").css("visibility", "hidden");
+                  $("#congrats").css("visibility", "hidden");
+                  //reset lại lần quay
+                  LoadLanQuay($("#id_giai_quay").text(), "", "true");
+                  $("#btn_lanquay").prop("disabled", false);
+                  $("#btn_ChuongTrinh").prop("disabled", false);
+                  Swal.fire({
+                    type: "success",
+                    title: "Lưu kết quả thành công!",
+                    showConfirmButton: false,
+                    timer: 1500,
+                    icon: "success",
+                  }).then(function (result) {
+                    if (result.isConfirmed) {
+                      Swal.fire("Saved!", "", "success");
+                    }
+                    if (result) {
+                      //enableBtns();
+                      $("#luukq_").attr("onclick", "");
+                      $("#kq_dialog").removeClass("animated tada");
+                      $("#kq_dialog").removeClass("animated fadeOutDown");
+                      $("#kq_dialog").addClass("animated fadeOutDown");
+
+                      setTimeout(function () {
+                        $("#kq_dialog").css("background", "transparent");
+                        $(".modal-dialog.modal-result").css(
+                          "box-shadow",
+                          "none"
+                        );
+                      }, 1);
+                      setTimeout(function () {
+                        $("#kq_dialog").css("display", "none");
+                        $("#kq_dialog").removeClass("animated fadeOutDown");
+                      }, 1000);
+                    }
+                  });
+
+                  $("#dvLoading").css("display", "none");
+                  $("#dvQuaySo").css("display", "block");
+                  $("#kq_dialog_close").css("display", "block");
+                }
+              });
+            }
+
+            //---------------------------------------------------QUAY LẠI CLICK
+            function QuayLai() {
+              InsertLog("Quay số QSNN", "Nhấn nút hủy bỏ", "", idSuKien).then(
+                function () {},
+                function () {}
+              );
+              Swal.fire({
+                title: "Quay lại lần quay.",
+                text: "Người tham dự sẽ không được tham gia các giải thưởng tiếp theo. Bạn có chắc muốn quay lại lần quay này không",
+                type: "warning",
+                width: 400,
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Xác nhận",
+              }).then(function (result) {
+                if (result.value) {
+                  $("#kq_dialog").css("display", "none");
+
+                  var errorType = "true";
+                  if (!errorType.includes("false")) {
+                    QuaySo(
+                      $("#tenLanQuay_").val(),
+                      $("#idLanQuay_").val(),
+                      $("#id_giai_quay").text()
+                    );
+                    if (isQc.toLowerCase().trim() == "true") {
+                      $("#container-bottom > div:nth-child(2)").css(
+                        "background-image",
+                        "url('/Images/qc.jpg')"
+                      );
+                    }
+
+                    $(".loadersss").css("display", "block");
+                    //Reset các số
+                    appendHTMLfortag();
+                    //reset btn quay số
+                    $("#btn_quayso").prop("disabled", false);
+                    //ẩn bottom buttons
+                    $("#congrats").css("visibility", "hidden");
+                    $("#btns_lefts").css("visibility", "hidden");
+                    $("#btn_lanquay").attr("disabled", "disabled");
+                    $("#btn_ChuongTrinh").attr("disabled", "disabled");
+                    $("#SoPhiDong").css("visibility", "hidden");
+                    $("#TenKhachHang").css("visibility", "hidden");
+                    $("#NgayHieuLuc").css("visibility", "hidden");
+                    $("#NoiPhatHanh").css("visibility", "hidden");
+                    //$('#btnquayso_container').css("display", "block");
+                    //enableBtns();
+                  } else if (errorType == "false1") {
+                    Swal({
+                      type: "error",
+                      title: "Lỗi",
+                      text:
+                        "Lỗi SQL: " +
+                        xmlhttp.responseText.substring(
+                          6,
+                          xmlhttp.responseText.length
+                        ),
+                    });
+                  } else if (errorType == "falsee") {
+                    Swal({
+                      type: "error",
+                      title: "Ngoại lệ",
+                      text: xmlhttp.responseText
+                        .toString()
+                        .substring(6, xmlhttp.responseText.toString().length),
+                    });
+                  }
+                }
+              });
+            }
+
+            $("#kq_dialog_close").click(function () {
+              $("#kq_dialog").css("display", "none");
+              setTimeout(function () {
+                $("#kq_dialog").css("background", "transparent");
+                $(".modal-dialog.modal-result").css("box-shadow", "none");
+              }, 1);
+            });
+
+            function GetIdUser() {
+              idUser = "20651";
+            }
+
+            //------------------------------------------------------------------XỬ LÝ BOX QUAY SỐ
+            function appendHTMLfortag() {
+              return new Promise(function (resolve, reject) {
+                //Quay bao gồm chữ và số
+                if (maLoaiQuaySo == "QSQC") isNumberAndText = true;
+                else isNumberAndText = false;
+                var numbers = "~";
+                if (isNumberAndText) {
+                  var NumberString =
+                    " |a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|0|1|2|3|4|5|6|7|8|9";
+                  for (var i = 0; i < 15; i++) {
+                    numbers += "0,";
+                    numbers +=
+                      shuffle(NumberString.split("|")).toString() + "~";
+                  }
+                }
+
+                //Quay chỉ bao gồm số
+                if (maLoaiQuaySo == "QS") isNumber = true;
+                else isNumber = false;
+                if (isNumber) {
+                  var NumberString = " |1|2|3|4|5|6|7|8|9";
+                  for (var i = 0; i < 15; i++) {
+                    numbers += "0,";
+                    numbers +=
+                      shuffle(NumberString.split("|")).toString() + "~";
+                  }
+                }
+
+                //Quay chỉ bao gồm chữ
+                if (maLoaiQuaySo == "QC") isText = true;
+                else isText = false;
+                if (isText) {
+                  var NumberString =
+                    " |a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z";
+                  for (var i = 0; i < 15; i++) {
+                    numbers +=
+                      shuffle(NumberString.split("|")).toString() + "~";
+                  }
+                }
+
+                customT = numbers.split("~");
+                for (var i = 1; i < 15 + 1; i++) {
+                  var el = $("#machine" + i);
+                  el.html("");
+                  var myCustomarrTextAndNumber = customT[i].split(",");
+                  for (var a = 0; a < myCustomarrTextAndNumber.length; a++) {
+                    if (parseInt(tongSo) >= 9) {
+                      if (myCustomarrTextAndNumber[a].toUpperCase() == "W")
+                        $("#machine" + i).append(
+                          "<div class='number-inside' style='font-size: 115px'>" +
+                            myCustomarrTextAndNumber[a].toUpperCase() +
+                            "</div>"
+                        );
+                      else
+                        $("#machine" + i).append(
+                          "<div class='number-inside' style='font-size: 130px'>" +
+                            myCustomarrTextAndNumber[a].toUpperCase() +
+                            "</div>"
+                        );
+                    } else
+                      $("#machine" + i).append(
+                        "<div class='number-inside'>" +
+                          myCustomarrTextAndNumber[a].toUpperCase() +
+                          "</div>"
+                      );
+                  }
+                }
+                resolve("true");
+              });
+            }
+            var el2 = document.getElementById("machine1");
+            var el3 = document.getElementById("machine2");
+            var el4 = document.getElementById("machine3");
+            var el5 = document.getElementById("machine4");
+            var el6 = document.getElementById("machine5");
+            var el7 = document.getElementById("machine6");
+            var el8 = document.getElementById("machine7");
+            var el9 = document.getElementById("machine8");
+            var el10 = document.getElementById("machine9");
+            var el11 = document.getElementById("machine10");
+            var el12 = document.getElementById("machine11");
+            var el13 = document.getElementById("machine12");
+
+            var el14 = document.getElementById("machine13");
+            var el15 = document.getElementById("machine14");
+            var el16 = document.getElementById("machine15");
+
+            //-------------------------------------------------CÀI ĐẶT THỜI GIAN QUAY CHO CÁC SỐ
+            function startMachine(ketQua, idGiai, isAll) {
+              stopTime = 20;
+              bamDung = isBamDung.trim().toLowerCase() == "true" ? true : false;
+              if (bamDung) {
+                $("#btnDungLai_container").css("display", "block");
+                stopTime = 99999999999;
+              }
+
+              var duration = 1500;
+              var spinTimes = 2;
+              if (isNumberAndText) {
+                if (isAll) duration = 500;
+                else duration = 800;
+              } else if (isNumber) {
+                if (isAll) duration = 1000;
+                else duration = 500;
+              } else {
+                if (isAll) duration = 500;
+                else duration = 800;
+              }
+
+              if (bamDung) {
+                duration = 500;
+              }
+
+              const machine1 = new SlotMachine(el2, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[1]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(0, 1));
+                },
+              });
+              const machine2 = new SlotMachine(el3, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[2]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(1, 2));
+                },
+              });
+              const machine3 = new SlotMachine(el4, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[3]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(2, 3));
+                },
+              });
+              const machine4 = new SlotMachine(el5, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[4]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(3, 4));
+                },
+              });
+              const machine5 = new SlotMachine(el6, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[5]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(4, 5));
+                },
+              });
+              const machine6 = new SlotMachine(el7, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[6]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(5, 6));
+                },
+              });
+
+              const machine7 = new SlotMachine(el8, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[7]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(6, 7));
+                },
+              });
+
+              const machine8 = new SlotMachine(el9, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[8]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(7, 8));
+                },
+              });
+
+              const machine9 = new SlotMachine(el10, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[9]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(8, 9));
+                },
+              });
+
+              const machine10 = new SlotMachine(el11, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[10]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(9, 10));
+                },
+              });
+
+              const machine11 = new SlotMachine(el12, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[11]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(10, 11));
+                },
+              });
+
+              const machine12 = new SlotMachine(el13, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[12]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(11, 12));
+                },
+              });
+
+              const machine13 = new SlotMachine(el14, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[13]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(12, 13));
+                },
+              });
+
+              const machine14 = new SlotMachine(el15, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[14]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(13, 14));
+                },
+              });
+
+              const machine15 = new SlotMachine(el16, {
+                active: 0,
+                spin: 1,
+                delay: duration,
+                randomize: function () {
+                  return customT[15]
+                    .split(",")
+                    .indexOf(ketQua.toLowerCase().substring(14, 15));
+                },
+              });
+
+              playAudio("mp3Spin");
+              if (isAll) {
+                spinTimes = 99999;
+                playAudio("mp3Quay");
+                machine1.shuffle(spinTimes);
+                machine2.shuffle(spinTimes);
+                machine3.shuffle(spinTimes);
+                machine4.shuffle(spinTimes);
+                machine5.shuffle(spinTimes);
+                machine6.shuffle(spinTimes);
+                machine7.shuffle(spinTimes);
+                machine8.shuffle(spinTimes);
+                machine5.shuffle(spinTimes);
+                machine9.shuffle(spinTimes);
+                machine10.shuffle(spinTimes);
+                machine11.shuffle(spinTimes);
+                machine12.shuffle(spinTimes);
+                machine13.shuffle(spinTimes);
+                machine14.shuffle(spinTimes);
+                machine15.shuffle(spinTimes);
+
+                if (!bamDung) {
+                  pauseAudio("mp3Quay");
+                  playAudio("mp3Quay");
+                } else {
+                  pauseAudio("mp3Quay");
+                  playAudio("mp3Quay");
+                }
+
+                if (!bamDung)
+                  setTimeout(function () {
+                    machine1.stop(function () {
+                      var sounds = document.getElementsByTagName("audio");
+                      for (i = 0; i < sounds.length; i++) sounds[i].pause();
+                      $("#kq_dialog").css("display", "block");
+                      setTimeout(function () {
+                        $("#kq_dialog").removeClass("animated tada");
+                        $("#kq_dialog").addClass("animated tada");
+                      }, 100);
+
+                      setTimeout(function () {
+                        $("#kq_dialog").css(
+                          "background",
+                          "rgba(0, 0, 0, 0.42)"
+                        );
+                        $(".modal-dialog.modal-result").css(
+                          "box-shadow",
+                          "0px 0px 150px 200px #0000004d"
+                        );
+                      }, 1000);
+
+                      $("#btns_lefts").addClass("animated fadeIn");
+                      $("#btns_lefts").css("visibility", "visible");
+                      $("#btns_lefts").show();
+                      pauseAudio("mp3Quay");
+                      pauseAudio("mp3EndQuay");
+                      playAudio("mp3EndQuay");
+                    });
+                    machine2.stop();
+                    machine3.stop();
+                    machine4.stop();
+                    machine5.stop();
+                    machine6.stop();
+                    machine7.stop();
+                    machine8.stop();
+                    machine5.stop();
+                    machine9.stop();
+                    machine10.stop();
+                    machine11.stop();
+                    machine12.stop();
+                    machine13.stop();
+                    machine14.stop();
+                    machine15.stop();
+                  }, stopTime);
+                else
+                  $("#btnDungLai_container > button").click(function () {
+                    machine1.stop(function () {
+                      var sounds = document.getElementsByTagName("audio");
+                      for (i = 0; i < sounds.length; i++) sounds[i].pause();
+                      $("#kq_dialog").css("display", "block");
+                      setTimeout(function () {
+                        $("#kq_dialog").removeClass("animated tada");
+                        $("#kq_dialog").addClass("animated tada");
+                      }, 100);
+
+                      setTimeout(function () {
+                        $("#kq_dialog").css(
+                          "background",
+                          "rgba(0, 0, 0, 0.42)"
+                        );
+                        $(".modal-dialog.modal-result").css(
+                          "box-shadow",
+                          "0px 0px 150px 200px #0000004d"
+                        );
+                      }, 1000);
+
+                      $("#btns_lefts").addClass("animated fadeIn");
+                      $("#btns_lefts").css("visibility", "visible");
+                      $("#btns_lefts").show();
+                      pauseAudio("mp3Quay");
+                      pauseAudio("mp3EndQuay");
+                      playAudio("mp3EndQuay");
+                    });
+                    machine2.stop();
+                    machine3.stop();
+                    machine4.stop();
+                    machine5.stop();
+                    machine6.stop();
+                    machine7.stop();
+                    machine8.stop();
+                    machine5.stop();
+                    machine9.stop();
+                    machine10.stop();
+                    machine11.stop();
+                    machine12.stop();
+                    machine13.stop();
+                    machine14.stop();
+                    machine15.stop();
+                    $("#btnDungLai_container").css("display", "none");
+                  });
+              } else {
+                var isLockedTungSoBoolen =
+                  isLockedTungSo.trim().toLowerCase() == "true" ? true : false;
+
+                if (isLockedTungSoBoolen || bamDung) {
+                  spinTimes = 99999;
+                  playAudio("mp3Quay");
+                  machine1.shuffle(spinTimes);
+                  machine2.shuffle(spinTimes);
+                  machine3.shuffle(spinTimes);
+                  machine4.shuffle(spinTimes);
+                  machine5.shuffle(spinTimes);
+                  machine6.shuffle(spinTimes);
+                  machine7.shuffle(spinTimes);
+                  machine8.shuffle(spinTimes);
+                  machine5.shuffle(spinTimes);
+                  machine9.shuffle(spinTimes);
+                  machine10.shuffle(spinTimes);
+                  machine11.shuffle(spinTimes);
+                  machine12.shuffle(spinTimes);
+                  machine13.shuffle(spinTimes);
+                  machine14.shuffle(spinTimes);
+                  machine15.shuffle(spinTimes);
+
+                  pauseAudio("mp3Quay");
+                  playAudio("mp3Quay");
+                  if (!bamDung)
+                    setTimeout(function () {
+                      machine1.stop(function () {
+                        thongBaoChucMung();
+                      });
+                      machine2.stop();
+                      machine3.stop();
+                      machine4.stop();
+                      machine5.stop();
+                      machine6.stop();
+                      machine7.stop();
+                      machine8.stop();
+                      machine5.stop();
+                      machine9.stop();
+                      machine10.stop();
+                      machine11.stop();
+                      machine12.stop();
+                      machine13.stop();
+                      machine14.stop();
+                      machine15.stop();
+                    }, stopTime);
+
+                  $("#btnDungLai_container > button").click(function () {
+                    machine1.stop(function () {
+                      thongBaoChucMung();
+                    });
+                    machine2.stop();
+                    machine3.stop();
+                    machine4.stop();
+                    machine5.stop();
+                    machine6.stop();
+                    machine7.stop();
+                    machine8.stop();
+                    machine5.stop();
+                    machine9.stop();
+                    machine10.stop();
+                    machine11.stop();
+                    machine12.stop();
+                    machine13.stop();
+                    machine14.stop();
+                    machine15.stop();
+                    $("#btnDungLai_container").css("display", "none");
+                  });
+
+                  function thongBaoChucMung() {
+                    canQuay = false;
+                    GetThongTinKH(ketQua);
+                  }
+                } else {
+                  spinTimes = 3;
+                  if (isNumberAndText || isText) spinTimes = 2;
+                  var daQuay = 0;
+                  canQuay = true;
+                  if (tongSo == daQuay) {
+                    thongBaoChucMung();
+                  }
+                  if (canQuay) {
+                    pauseAudio("mp3QuayNgan");
+                    playAudio("mp3QuayNgan");
+                    daQuay++;
+                    machine1.shuffle(spinTimes, function () {
+                      if (tongSo == daQuay) {
+                        thongBaoChucMung();
+                      }
+                      if (canQuay) {
+                        pauseAudio("mp3QuayNgan");
+                        playAudio("mp3QuayNgan");
+                        daQuay++;
+                        machine2.shuffle(spinTimes, function () {
+                          if (tongSo == daQuay) {
+                            thongBaoChucMung();
+                          }
+                          if (canQuay) {
+                            pauseAudio("mp3QuayNgan");
+                            playAudio("mp3QuayNgan");
+                            daQuay++;
+                            machine3.shuffle(spinTimes, function () {
+                              if (tongSo == daQuay) {
+                                thongBaoChucMung();
+                              }
+                              if (canQuay) {
+                                pauseAudio("mp3QuayNgan");
+                                playAudio("mp3QuayNgan");
+                                daQuay++;
+                                machine4.shuffle(spinTimes, function () {
+                                  if (tongSo == daQuay) {
+                                    thongBaoChucMung();
+                                  }
+                                  if (canQuay) {
+                                    pauseAudio("mp3QuayNgan");
+                                    playAudio("mp3QuayNgan");
+                                    daQuay++;
+                                    machine5.shuffle(spinTimes, function () {
+                                      if (tongSo == daQuay) {
+                                        thongBaoChucMung();
+                                      }
+                                      if (canQuay) {
+                                        pauseAudio("mp3QuayNgan");
+                                        playAudio("mp3QuayNgan");
+                                        daQuay++;
+                                        machine6.shuffle(
+                                          spinTimes,
+                                          function () {
+                                            if (tongSo == daQuay) {
+                                              thongBaoChucMung();
+                                            }
+                                            if (canQuay) {
+                                              pauseAudio("mp3QuayNgan");
+                                              playAudio("mp3QuayNgan");
+                                              daQuay++;
+                                              machine7.shuffle(
+                                                spinTimes,
+                                                function () {
+                                                  if (tongSo == daQuay) {
+                                                    thongBaoChucMung();
+                                                  }
+                                                  if (canQuay) {
+                                                    pauseAudio("mp3QuayNgan");
+                                                    playAudio("mp3QuayNgan");
+                                                    daQuay++;
+                                                    machine8.shuffle(
+                                                      spinTimes,
+                                                      function () {
+                                                        if (tongSo == daQuay) {
+                                                          thongBaoChucMung();
+                                                        }
+                                                        if (canQuay) {
+                                                          pauseAudio(
+                                                            "mp3QuayNgan"
+                                                          );
+                                                          playAudio(
+                                                            "mp3QuayNgan"
+                                                          );
+                                                          daQuay++;
+                                                          machine9.shuffle(
+                                                            spinTimes,
+                                                            function () {
+                                                              if (
+                                                                tongSo == daQuay
+                                                              ) {
+                                                                thongBaoChucMung();
+                                                              }
+                                                              if (canQuay) {
+                                                                pauseAudio(
+                                                                  "mp3QuayNgan"
+                                                                );
+                                                                playAudio(
+                                                                  "mp3QuayNgan"
+                                                                );
+                                                                daQuay++;
+                                                                machine10.shuffle(
+                                                                  spinTimes,
+                                                                  function () {
+                                                                    if (
+                                                                      tongSo ==
+                                                                      daQuay
+                                                                    ) {
+                                                                      thongBaoChucMung();
+                                                                    }
+                                                                    if (
+                                                                      canQuay
+                                                                    ) {
+                                                                      pauseAudio(
+                                                                        "mp3QuayNgan"
+                                                                      );
+                                                                      playAudio(
+                                                                        "mp3QuayNgan"
+                                                                      );
+                                                                      daQuay++;
+                                                                      machine11.shuffle(
+                                                                        spinTimes,
+                                                                        function () {
+                                                                          if (
+                                                                            tongSo ==
+                                                                            daQuay
+                                                                          ) {
+                                                                            thongBaoChucMung();
+                                                                          }
+                                                                          if (
+                                                                            canQuay
+                                                                          ) {
+                                                                            pauseAudio(
+                                                                              "mp3QuayNgan"
+                                                                            );
+                                                                            playAudio(
+                                                                              "mp3QuayNgan"
+                                                                            );
+                                                                            daQuay++;
+                                                                            machine12.shuffle(
+                                                                              spinTimes,
+                                                                              function () {
+                                                                                if (
+                                                                                  tongSo ==
+                                                                                  daQuay
+                                                                                ) {
+                                                                                  thongBaoChucMung();
+                                                                                }
+                                                                                if (
+                                                                                  canQuay
+                                                                                ) {
+                                                                                  pauseAudio(
+                                                                                    "mp3QuayNgan"
+                                                                                  );
+                                                                                  playAudio(
+                                                                                    "mp3QuayNgan"
+                                                                                  );
+                                                                                  daQuay++;
+                                                                                  machine13.shuffle(
+                                                                                    spinTimes,
+                                                                                    function () {
+                                                                                      if (
+                                                                                        tongSo ==
+                                                                                        daQuay
+                                                                                      ) {
+                                                                                        thongBaoChucMung();
+                                                                                      }
+                                                                                      if (
+                                                                                        canQuay
+                                                                                      ) {
+                                                                                        pauseAudio(
+                                                                                          "mp3QuayNgan"
+                                                                                        );
+                                                                                        playAudio(
+                                                                                          "mp3QuayNgan"
+                                                                                        );
+                                                                                        daQuay++;
+                                                                                        machine14.shuffle(
+                                                                                          spinTimes,
+                                                                                          function () {
+                                                                                            if (
+                                                                                              tongSo ==
+                                                                                              daQuay
+                                                                                            ) {
+                                                                                              thongBaoChucMung();
+                                                                                            }
+                                                                                            if (
+                                                                                              canQuay
+                                                                                            ) {
+                                                                                              pauseAudio(
+                                                                                                "mp3QuayNgan"
+                                                                                              );
+                                                                                              playAudio(
+                                                                                                "mp3QuayNgan"
+                                                                                              );
+                                                                                              daQuay++;
+                                                                                              machine15.shuffle(
+                                                                                                spinTimes,
+                                                                                                function () {
+                                                                                                  thongBaoChucMung();
+                                                                                                }
+                                                                                              );
+                                                                                            }
+                                                                                          }
+                                                                                        );
+                                                                                      }
+                                                                                    }
+                                                                                  );
+                                                                                }
+                                                                              }
+                                                                            );
+                                                                          }
+                                                                        }
+                                                                      );
+                                                                    }
+                                                                  }
+                                                                );
+                                                              }
+                                                            }
+                                                          );
+                                                        }
+                                                      }
+                                                    );
+                                                  }
+                                                }
+                                              );
+                                            }
+                                          }
+                                        );
+                                      }
+                                    });
+                                  }
+                                });
+                              }
+                            });
+                          }
+                        });
+                      }
+                    });
+                  }
+                  function thongBaoChucMung() {
+                    canQuay = false;
+                    GetThongTinKH(ketQua);
+                  }
+                }
+              }
+            }
+
+            function getRandomInt(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function SetColor() {
+              $(
+                "#btn_ChuongTrinh, #btn_lanquay, #button-quayLai, #button-XacNhan,.button-ss.circle-ss"
+              ).css("background", "#" + colorMauNutBam);
+            }
+
+            function shuffle(array) {
+              let counter = array.length;
+              // While there are elements in the array
+              while (counter > 0) {
+                // Pick a random index
+                let index = Math.floor(Math.random() * counter);
+
+                // Decrease counter by 1
+                counter--;
+
+                // And swap the last element with it
+                let temp = array[counter];
+                array[counter] = array[index];
+                array[index] = temp;
+              }
+              return array;
+            }
+
+            function setUpCaiDat() {
+              return new Promise(function (resolve, reject) {
+                var errorType = "true"; //xmlhttp.responseText.toString().toLowerCase().substring(0, 6);
+
+                if (!errorType.includes("false")) {
+                  // var arrChiTietCauHinhMacDinh = xmlhttp.responseText.split("|~|");
+                  imgLogo = "qsnn/img/logo.png";
+                  imgHinhNen = "qsnn/img/qsnn_anhnen.png";
+                  colorMauNen = "D15A8E";
+                  colorMauNutBam = "D15A8E";
+                  colorMauNenOQuaySo = "D15A8E";
+                  colorMauChu = "D7CFC8";
+                  isHienThiHinhNen = "true";
+                  isHienThiHinhAnhGiaiThuong = "true";
+                  isHienThiLogo = "true";
+                  soLuongOQuaySo = "5";
+                  maLoaiQuaySo = "QSQC";
+                  cauChucMung =
+                    "FFFFFF|Chúc mừng <br/>_<br/>_-f2 FFFFFF-f3 FFFFFF";
+                  soLuongField = "3";
+                  tenField2 = "Họ tên";
+                  tenField3 = "Phòng Ban";
+                  tenField4 = "Giải thưởng";
+                  tenField5 = "";
+                  tenField6 = "";
+                  tenField7 = "";
+                  tenField8 = "";
+                  tenField9 = "";
+                  tenField10 = "";
+                  tenField11 = "";
+                  tenField12 = "";
+                  isHienThiTenCongTy = "true";
+                  isHienThiTenSuKien = "false";
+                  tenLoaiQuaySo = "Quay bao gồm cả số và chữ";
+                  tenSuKien = "";
+                  tenCongTy = "BỆNH VIỆN ĐA KHOA QUỐC TẾ BẮC HÀ";
+                  isQc = "";
+                  isLockedTungSo = "true";
+                  isBamDung = "false";
+                  // listGiaiThuong = [{GiaiNhat: ["Lần 1"],GiaiNhi: ["Lần 1","Lần 2"],GiaiBa:["Lần 1","Lần 2,Lần 3"],GiaiKhuyenKhich:["Lần 1","Lần 2,Lần 3"]}]
+                  isDungCssKetQua = true;
+
+                  //if (arrChiTietCauHinhMacDinh[33].toString().trim() != "") {
+                  $("#cssketqua").html(
+                    "<style>newline/*chinh? chieu rong khung chua ma quay so*/newline.cssmaquaysocontainer {newline	width: 320px !important;newline	line-height: 60px;newline}newlinenewline.consthree {newline	width: calc(50% - 160px);newline}newlinenewline.constwo {newline	width: calc(100% - 320px);newline}newline/*chinh mau vong tron chua so thu tu*/newline.cssvongtron {newline	background: #B71919;newline}newline/*chinh chu~ ma~ quay so*/newline.cssmaquayso {newline	color: black;newline	font-weight: bold;newline	font-size: 32px;newline}newline/*chinh? chu~ cac thong tin them*/newline.cssfield {newline	font-size: 22px;newline	text-align: left;newline}newline/*CSS cua khung ket qua hien nhieu cot*/newline.cssmaquayso1 {newline	font-size: 35px !important;newline	color: black;newline}newlinenewline.cssfield1 {newline	font-size: 30px !important;newline	color: black;newline}newline/*chinh mau sac cua khung ket qua*/newline.modal .modal-header {newline	background: #b71919;newline	border-bottom: 5px solid #ed3e3e;newline}newlinenewline.tabs-result .nav-tabs > .active > a {newline	border-bottom: 5px solid #ed3e3e;newline	color: #b81919;newline}newline#conatainerMain{overflow: visible !important;}newline#congratsParent{padding: 0 15px;}newline#congrats{newlineborder-radius: 0;newlinebackground: #0000009c;newlinebox-shadow: 0 0 800px 380px #0000009c;}</style>".replace(
+                      /newline/g,
+                      ""
+                    )
+                  );
+                  //}
+
+                  //Xử lý hình nền
+                  $("body").css("background", "transparent");
+                  if (isHienThiHinhNen.toLowerCase() != "true")
+                    $("body").css("background", "#" + colorMauNen);
+                  else
+                    $("body").css(
+                      "cssText",
+                      "background-image: url(" +
+                        imgHinhNen +
+                        "); background-size: 100% auto; min-width: 1359px"
+                    );
+
+                  if (isQc.toLowerCase().trim() == "true") {
+                    $("#container-bottom > div:nth-child(2)").css(
+                      "background-image",
+                      "url('/Images/qc.jpg')"
+                    );
+                  }
+
+                  //  if (arrChiTietCauHinhMacDinh.toString().trim() == "")
+                  //     window.location.href = "/Home/DangNhap.aspx?error=1&idSuKien=" + idSuKien;
+                  //Xử lý logo
+                  if (isHienThiLogo.toLowerCase() == "true")
+                    $("#logo2").attr("src", imgLogo);
+
+                  //Xử lý tên công ty
+                  if (isHienThiTenCongTy.toLowerCase() != "true")
+                    $("#span-tenCongTy").css("visibility", "hidden");
+                  else $("#span-tenCongTy").html("" + tenCongTy);
+
+                  //Xử lý tên Sự kiện
+                  if (isHienThiTenSuKien.toLowerCase() != "true")
+                    $("#span-tenChuongTrinh").css("visibility", "hidden");
+                  else $("#span-tenChuongTrinh").html("" + tenSuKien);
+
+                  //Xử lý ảnh giải thưởng
+                  if (isHienThiHinhAnhGiaiThuong.toLowerCase() != "true")
+                    $("#reward_img_id").css("visibility", "hidden");
+                  $(".title_text").css("color", "#" + colorMauChu);
+                  $(".machin_s").css("background", "#" + colorMauNenOQuaySo);
+                  $(
+                    "#btn_ChuongTrinh, #btn_lanquay, #button-quayLai, #button-XacNhan"
+                  ).css("background", "#" + colorMauNutBam);
+                  resolve("true");
+                } else if (errorType == "false1") {
+                  Swal({
+                    type: "error",
+                    title: "Lỗi",
+                    text:
+                      "Lỗi SQL: " +
+                      xmlhttp.responseText.substring(
+                        6,
+                        xmlhttp.responseText.length
+                      ),
+                  });
+                } else if (errorType == "false2") {
+                  window.location.href =
+                    "/Home/DangNhap.aspx?error=1&idSuKien=" + idSuKien;
+                } else if (errorType == "falseex") {
+                  Swal({
+                    type: "error",
+                    title: "Ngoại lệ",
+                    text: xmlhttp.responseText
+                      .toString()
+                      .substring(6, xmlhttp.responseText.toString().length),
+                  });
+                }
+              });
+            }
+          </script>
+
+          <script type="text/javascript">
+            // Click "Congratulations!" to play animation
+            var particles = [".blob", ".star"],
+              $congratsSection = $("#congrats"),
+              $title = $("#congrats>h1");
+
+            $(function () {
+              init({
+                numberOfStars: 30,
+                numberOfBlobs: 15,
+              });
+
+              fancyPopIn();
+            });
+
+            //$congratsSection.click(fancyPopIn);
+
+            function fancyPopIn() {
+              reset();
+              animateText();
+
+              for (var i = 0, l = particles.length; i < l; i++) {
+                animateParticles(particles[i]);
+              }
+            }
+
+            function animateText() {
+              TweenMax.from($title, 0.65, {
+                scale: 0.1,
+                opacity: 0,
+                rotation: 15,
+                ease: Back.easeOut.config(5),
+              });
+            }
+
+            function animateParticles(selector) {
+              var xSeed = Math.floor(Math.random() * 380) + 350;
+              var ySeed = Math.floor(Math.random() * 170) + 120;
+
+              $.each($(selector), function (i) {
+                var min = 0.4,
+                  max = 1.5,
+                  highlightedNumber = Math.random() * (max - min) + min;
+
+                var $particle = $(this);
+                var speed = Math.floor(Math.random() * 5) + 1;
+                var rotation = Math.floor(Math.random() * 100) + 5;
+                var scale = highlightedNumber;
+                var x = Math.floor(Math.random() * (xSeed * 2) + 1) - xSeed;
+                var y = Math.floor(Math.random() * (ySeed * 2) + 1) - ySeed;
+
+                TweenMax.to($particle, speed, {
+                  x: x,
+                  y: y,
+                  ease: Power1.easeOut,
+                  opacity: 0,
+                  rotation: rotation,
+                  scale: scale,
+                  onStartParams: [$particle],
+                  onStart: function ($element) {
+                    $element.css("display", "block");
+                  },
+                  onCompleteParams: [$particle],
+                  onComplete: function ($element) {
+                    $element.css("display", "none");
+                  },
+                });
+              });
+            }
+
+            function reset() {
+              for (var i = 0, l = particles.length; i < l; i++) {
+                $.each($(particles[i]), function () {
+                  TweenMax.set($(this), { x: 0, y: 0, opacity: 1 });
+                });
+              }
+
+              TweenMax.set($title, { scale: 1, opacity: 1, rotation: 0 });
+            }
+
+            function init(properties) {
+              for (var i = 0; i < properties.numberOfStars; i++) {
+                $congratsSection.append(
+                  '<div class="particle star ' +
+                    i +
+                    '"><span class="glyphicon glyphicon-star"></span></div>'
+                );
+              }
+
+              for (var i = 0; i < properties.numberOfBlobs; i++) {
+                $congratsSection.append(
+                  '<div class="particle blob ' + i + '"></div>'
+                );
+              }
+            }
+
+            function reSetPr() {
+              $("#congrats").css("visibility", "hidden");
+              $("#btnquayso_container").css("display", "none");
+              $("#btns_lefts").css("visibility", "hidden");
+            }
+
+            function disableBtns() {
+              $("#btn_ChuongTrinh").css("cursor", "not-allowed");
+              $("#btn_ChuongTrinh").attr("disabled", "disabled");
+              $("#btn_lanquay").attr("disabled", "disabled");
+              $("#btn_lanquay").css("cursor", "not-allowed");
+            }
+
+            function enableBtns() {
+              $("#btn_ChuongTrinh").css("cursor", "pointer");
+              $("#btn_lanquay").css("cursor", "pointer");
+              $("#btn_ChuongTrinh").removeAttr("disabled");
+              $("#btn_lanquay").removeAttr("disabled");
+            }
+          </script>
+          <style>
+            #congrats {
+            	position: ab top: calc(~"50% - 50px");
+            	width: 100%;
+            	line-height: 1;
+            	text-align: center;
+            	left: 0;
+            	right: 0;
+            }
+
+            	#congrats > h1 {
+            		margin-top: 10px;
+            	}
+
+            #title {
+            	transform-origin: 50% 50%;
+            	font-size: 50px;
+            	cursor: pointer;
+            	z-index: 2;
+            	position: absolute;
+            	top: 0;
+            	text-align: center;
+            	width: 100%;
+            	user-select: none;
+            	-webkit-user-select: none;
+            }
+
+            .ng-binding {
+            	width: 25% !important;
+            	text-align: center;
+            	font-size: 35px;
+            	padding: 20px 10px !important;
+            }
+
+            .particle {
+            	height: 50px;
+            	width: 50px;
+            	position: absolute;
+            	top: 45%;
+            	left: 45%;
+            	z-index: 1;
+            	font-size: 30px;
+            }
+
+            .number-inside {
+            	text-shadow: 0px 0px #8e8e8e, 0px 0px #2d2d2d, 1px 0px #424242;
+            }
+
+            .star {
+            	color: #ffcc00;
+            }
+
+            .blob {
+            	background: #FFCC00;
+            	border-radius: 50%;
+            	display: block;
+            }
+
+            .machin_s, .setbg.number_s_box {
+            	border-radius: 0px !important;
+            }
+          </style>
+        </div>
+      </div>
+      <!-- <nav id="menu-right">
+        <ul
+          id="menu_right1_server"
+          style="display: none"
+          class="menu_right1"
+        ></ul>
+        <ul>
+          <li class="Selected">
+            <a href="demo.html">Basic Horizontal Menu</a>
+            <ul>
+              <li><a href="#">First sub-menu</a></li>
+              <li>
+                <a href="#">Second sub-menu</a>
+                <ul>
+                  <li><a href="#">First sub-sub-menu</a></li>
+                  <li><a href="#">Second sub-sub-menu</a></li>
+                  <li><a href="#">Third sub-sub-menu</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Third sub-menu</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav> -->
+
+      <script src="/qsnn/js/jquery.cookie.js"></script>
+      <script src="/qsnn/js/controller.js"></script>
+      <script>
+        //ACTIVE MENU CHÍNH
+        var currentURL = window.location.href.toString().toLowerCase();
+        // $("#divMenu li").removeClass("activeMenu");
+
+        // if (currentURL.includes("default.aspx")) {
+        //   $("#divMenu li:nth-child(1)").addClass("activeMenu");
+        // } else if (currentURL.includes("danhsachtrunggiai.aspx")) {
+        //   $("#divMenu li:nth-child(2)").addClass("activeMenu");
+        // }
+
+        // $(".menu_right1").css("display", "none");
+        $(function () {
+          //   console.log($("div#menu-right"));
+          //   console.log($($("div#menu-right").mmenu("right")));
+          $("nav#menu-right").mmenu();
+        });
+        function DangXuat() {}
+        var listTrungGiaiTemp = [];
+        localStorage.setItem("listTrungGiai", "");
+        var listNhanVien;
+        fetch("./qsnn/nhanvien.json")
+          .then((response) => response.json())
+          .then((data) => {
+            listNhanVien = data;
+          })
+          .catch((error) => console.log(error)); // Xử lý lỗi nếu có
+        //GET PARAMS TRÊN URL
+        function getUrlVars() {
+          var vars = {};
+          var parts = window.location.href.replace(
+            /[?&]+([^=&]+)=([^&]*)/gi,
+            function (m, key, value) {
+              vars[key] = value;
+            }
+          );
+          return vars;
+        }
+
+        $("#ketQuaDialogClose").click(function () {
+          $("#ketQuaDialog").css("display", "none");
+          setTimeout(function () {
+            $("#ketQuaDialog").css("background", "transparent");
+            $(".modal-dialog.modal-result").css("box-shadow", "none");
+          }, 1);
+        });
+
+        function moDanhSach() {
+          $("#ketQuaDialog").css("display", "block");
+          $("#loaderKetQua").css("cssText", "display: block !important;");
+          setTimeout(function () {
+            $("#ketQuaDialog").removeClass("animated tada");
+            $("#ketQuaDialog").addClass("animated tada");
+          }, 100);
+          setTimeout(function () {
+            $("#ketQuaDialog").css("background", "rgba(0, 0, 0, 0.42)");
+            $(".modal-dialog.modal-result").css(
+              "box-shadow",
+              "0px 0px 150px 200px #0000004d"
+            );
+          }, 1000);
+          // $("#ketquacontainer").html("");
+          var tableKetQua = `<table style="width: 100%">
+                                      <tr style="width: 100%">
+                                        <th>Mã nhân viên</th>
+                                        <th>Họ và Tên</th>
+                                        <th>Khoa/Phòng</th>
+                                        <th>Giải thưởng</th>
+                                      </tr>`;
+          let listTrungGiai = localStorage.getItem("listTrungGiai");
+          if (listTrungGiai) {
+            let arrTrungGiai = JSON.parse(listTrungGiai);
+            arrTrungGiai.sort((a, b) => {
+              let idA = parseInt(a.GiaiThuong.idGiai);
+              let idB = parseInt(b.GiaiThuong.idGiai);
+              return idA - idB;
+            });
+            arrTrungGiai.forEach((element) => {
+              tableKetQua += `
+              <tr style="width: 100%">
+                 <td>${element.MaSoNV}</td>
+                   <td>${element.HoTen}</td>
+                   <td>${element.KhoaPhong}</td>
+                   <td>${element.GiaiThuong.giaiThuong} - ${element.GiaiThuong.LanQuay}  </td>
+              </tr>
+              `;
+            });
+          }
+          tableKetQua += `</table>`;
+          $("#ketquacontainer").html(tableKetQua);
+
+          LoadKetQua().then(function () {
+            $("#loaderKetQua").css("cssText", "display: none !important;");
+          });
+        }
+
+        function LoadKetQua() {
+          return new Promise(function (resolve, reject) {
+            resolve();
+          });
+        }
+
+        function mpQuaySo() {
+          window.location.href =
+            "/default.aspx?idSuKien=" + getUrlVars()["idSuKien"];
+        }
+      </script>
+      <!-- Import List Nhan Vien -->
+      <script>
+        // Sử dụng Fetch API để tải file JSON
+      </script>
+      <style>
+        .activeMenu {
+          background: #de4a58;
+        }
+
+        .activeMenu a {
+          color: white !important;
+        }
+
+        .lds-ellipsis {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+          display: block !important;
+          margin: auto;
+        }
+
+        .lds-ellipsis div {
+          position: absolute;
+          top: 33px;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background: #1e1e1e;
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .lds-ellipsis div:nth-child(1) {
+          left: 8px;
+          animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+          left: 8px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+          left: 32px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+          left: 56px;
+          animation: lds-ellipsis3 0.6s infinite;
+        }
+
+        @keyframes lds-ellipsis1 {
+          0% {
+            transform: scale(0);
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        @keyframes lds-ellipsis3 {
+          0% {
+            transform: scale(1);
+          }
+
+          100% {
+            transform: scale(0);
+          }
+        }
+
+        @keyframes lds-ellipsis2 {
+          0% {
+            transform: translate(0, 0);
+          }
+
+          100% {
+            transform: translate(24px, 0);
+          }
+        }
+      </style>
+    </div>
+  </body>
+</html>
